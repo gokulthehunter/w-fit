@@ -174,7 +174,7 @@
         </div>
     </div>
 </div>
-
+ 
 <!-- Cart Section -->
 <!-- <?php //include('../components/cart.php') ?> -->
 <!-- <div class="call-to-action">
