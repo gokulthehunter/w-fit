@@ -14,10 +14,6 @@
         height: calc(100vh - 180px);
     }
 
-    .container {
-        overflow-y: scroll;
-    }
-
     &--help {
         border-radius: 50%;
         border: 1px solid #D0D0D0;
@@ -73,7 +69,6 @@
         margin-top: 45px;
         width: 50%;
         display: inline-block;
-        padding-bottom: 90px;
 
         &__title {
             font-size: 12px;
@@ -96,15 +91,6 @@
                 background: url(#{$img_url}custom-select-down-arrow.png) 90% 20px/10px no-repeat;
             }
         }
-
-        .dropdownjs {
-            width: 100%;
-            .fakeinput {
-                padding-top: 12px;
-                padding-bottom: 12px;
-                background: transparent;
-            }
-        }
     }
 
     &--quantity {
@@ -112,7 +98,6 @@
         width: 44%;
         margin-left: 4%;
         display: inline-block;
-        padding-bottom: 90px;
 
         @include media-lg-min {
             margin-top: 10px;

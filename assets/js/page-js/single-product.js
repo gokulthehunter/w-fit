@@ -3,22 +3,6 @@ jQuery(document).ready(function ($) {
     (function ($) {
         "use strict";
 
-        
-        $('.select-mattress-popup--know-measure-size__button').on('click', function(e){
-            e.preventDefault();
-            $('.know-measure-size-popup').fadeIn(500);
-            $('.body-overlay').fadeIn(500);
-            $('body').addClass('know-measure-size-popup-open-scroll-lock');
-        });
-
-        $('.know-measure-size-popup--close-button, .body-overlay').on('click', function () {  
-            $(this).closest('.know-measure-size-popup').fadeOut(500);
-            $('.body-overlay').fadeOut(500);
-            $('body').removeClass('know-measure-size-popup-open-scroll-lock');
-        });
-
-       
-
         function sleepScoreCalculatorPopupClose() {
             $('.sleep-score-calculator-popup--close-button').on('click', function (e) {
                 e.preventDefault();
@@ -148,36 +132,21 @@ jQuery(document).ready(function ($) {
                 $(this).closest('.select-mattress-popup--category--option--wrap').find('.select-mattress-popup--category--option').removeClass('active');
                 $(this).addClass('active');
             });
-
-            $('.select-mattress-popup--dimensions--option').on('click', function (e) {
-                e.preventDefault();
-                $(this).closest('.select-mattress-popup--dimensions--option--wrap').find('.select-mattress-popup--dimensions--option').removeClass('active');
-                $(this).addClass('active');
-            });
         }
 
         $('.select-mattress--button').on('click', function (e) {
             e.preventDefault();
             $(this).find('a').text('Add To Cart');
             $('.select-mattress-popup').fadeIn(500);
-            $('.select-mattress-popup--know-measure-size').css('bottom', $('.select-mattress').outerHeight());
-            $('body').addClass('select-mattress-popup-open-scroll-lock');
+            $('.select-mattress-popup--know-measure-size').css('bottom', 0);
         });
 
         $('.select-mattress-popup--close-button').on('click', function (e) {
-            alert
             e.preventDefault();
             $('.select-mattress--button').find('a').text('Select Mattress');
             $('.select-mattress-popup').fadeOut(500);
             $('.select-mattress-popup--know-measure-size').css('bottom', '-100px');
-            $('body').removeClass('select-mattress-popup-open-scroll-lock');
         });
-
-        // $('.select-mattress-popup').height()
-        setTimeout(function () {  
-            $('.select-mattress-popup').find('.container').height($(window).height()-265);
-        }, 5000);
-        
 
         function selectMattressDesktop() {
 
@@ -201,7 +170,7 @@ jQuery(document).ready(function ($) {
 
 
         // DOCUMENT READY STARTS
-        $(document).ready(function () { 
+        $(document).ready(function () {
 
             selectMattressDesktop();
 

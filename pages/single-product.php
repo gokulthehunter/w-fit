@@ -12,7 +12,7 @@
     <div class="select-mattress d-lg-none">
             <div class="container">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-4">
                         <div class="select-mattress--discounted-price">
                             <h4>&#8377; 9000</h4>
                         </div>
@@ -21,7 +21,7 @@
                             <span class="select-mattress--discount-percentage">Save 12%</span>
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-8">
                         <div class="select-mattress--button">
                             <a href="#">Select Mattress</a>
                         </div>
@@ -47,7 +47,7 @@
                 <div class="row">
                     <div class="col-12 p-0">
                         <div class="product-image-carousel-wrap">
-                            <div class="product-image-carousel">
+                            <div class="swiper-container product-image-carousel">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide" data-bg="<?php echo $imagesurl ?>single-product/product-image-carousel/1.jpg">
 
@@ -296,8 +296,6 @@
         <?php include('../components/select-mattress-popup-block.php') ?>
         <!-- Know Mattress Size Popup Block -->
         <?php include('../components/know-mattress-size-popup-block.php') ?>
-        <!-- Know Mattress Size Measure Popup Block -->
-        <?php include('../components/know-measure-size-popup-block.php') ?>
     </main>
     <!-- website footer[start] -->
     <?php include('../components/shared/footer.php') ?>
@@ -307,6 +305,7 @@
     <!-- scripts[end] -->
     <!-- page dependancy scripts -->
     <!-- page scripts -->
+    <script src="<?php echo $assetsurl ?>js/page-js/index.js"></script>
     <script src="<?php echo $assetsurl ?>js/page-js/single-product.js"></script>
     <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.1/js/all.js?ver=5.9.0"></script>
 </body>

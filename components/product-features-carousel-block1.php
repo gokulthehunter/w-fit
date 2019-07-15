@@ -9,7 +9,7 @@
                         </div>
                         <div class="product-features-carousel1--content-block">
                             <div class="product-features-carousel1--content-block__icon">
-                                <img src="<?php echo $imagesurl; ?>product-features-carousel-block1/icon-1.png" class="img-fluid" alt="wakefit">
+                                <img src="<?php echo $imagesurl; ?>product-features-carousel-block1/icon-1.png" alt="wakefit">
                             </div>
                             <div class="product-features-carousel1--content-block__text">
                                 <h4 class="title">Breathable Fabric</h4>
@@ -23,7 +23,7 @@
                         </div>
                         <div class="product-features-carousel1--content-block">
                             <div class="product-features-carousel1--content-block__icon">
-                                <img src="<?php echo $imagesurl; ?>product-features-carousel-block1/icon-1.png" class="img-fluid" alt="wakefit">
+                                <img src="<?php echo $imagesurl; ?>product-features-carousel-block1/icon-1.png" alt="wakefit">
                             </div>
                             <div class="product-features-carousel1--content-block__text">
                                 <h4 class="title">Breathable Fabric</h4>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="product-features-carousel1--content-block">
                             <div class="product-features-carousel1--content-block__icon">
-                                <img src="<?php echo $imagesurl; ?>product-features-carousel-block1/icon-1.png" class="img-fluid" alt="wakefit">
+                                <img src="<?php echo $imagesurl; ?>product-features-carousel-block1/icon-1.png" alt="wakefit">
                             </div>
                             <div class="product-features-carousel1--content-block__text">
                                 <h4 class="title">Breathable Fabric</h4>

@@ -1,0 +1,16 @@
+.shipment-summary{
+    &--title{
+        color:$color_black;
+        font-size: 16px;
+    }
+    &--content{
+        font-size:14px;
+        color: $color_black;
+    }
+
+    &--tab-adjuster{
+        margin:2px -25px 30px -25px;
+    }
+
+
+}

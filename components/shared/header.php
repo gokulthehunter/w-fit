@@ -16,24 +16,6 @@
                 <img src="<?php echo $imagesurl ?>header/wakefit-logo.png" alt="logo">
             </a>        
         </div>
-        <div class="header--desktop-menu">
-            <ul class="">
-                <li class="header--desktop-menu__item has-children">
-                    <a href="#">Mattress</a>
-                    <ul class="desktop-sub-menu">
-                        <li class="header--desktop-menu__item"><a href="#">Orthopaedic Mattress</a></li>
-                        <li class="header--desktop-menu__item"><a href="#">Dual Comfort Mattress</a></li>
-                    </ul>
-                </li>
-                <li class="header--desktop-menu__item"><a href="#">Pillows</a></li>
-                <li class="header--desktop-menu__item"><a href="#">Furniture</a></li>
-                <li class="header--desktop-menu__item"><a href="#">Accessories</a></li>
-            </ul>
-        </div>
-        <div class="header--signup-login">
-            <a href="" class="header--signup-login__text">Login / Signup</a>
-        </div>
-
         <div class="header--get-help"> 
             <a href="#">
                 <img class="header--get-help__icon" src="<?php echo $imagesurl ?>header/get-help-icon.svg" alt="icon">
@@ -41,6 +23,7 @@
             </a>   
         </div>
         <div class="header--cart">
+            <!-- <img class="header--cart__icon" src="<?php echo $imagesurl ?>header/cart-icon.svg" alt="cart">     -->
             <i class="header--cart__icon fa fa-shopping-cart" aria-hidden="true"></i>
             <span class="header--cart__count">1</span>
         </div>
@@ -174,21 +157,9 @@
         </div>
     </div>
 </div>
- 
+
 <!-- Cart Section -->
-<!-- <?php //include('../components/cart.php') ?> -->
-<!-- <div class="call-to-action">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3>Ready to go to bed?</h3>
-                <div class="button-block">
-                    <a class="white-button shop-now-button" href="#">Shop Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
+<?php //include('../components/cart.php') ?>
 
 <div class="master-wrap">
     <div class="master-wrap--overlay"></div>

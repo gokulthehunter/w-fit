@@ -70,68 +70,13 @@
         }
     }
 
-    &--shipping-address {
-        padding-top: 45px;
-        margin-bottom: 13px;
-
-        &__title {
-            font-size: 16px;
-            line-height: 23px;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
-
-        &__form {
-            .custom-select-box {
-                border-radius: 5px;
-                border: 1px solid #000000;
-                padding: 12px 20px;
-                font-size: 14px;
-                line-height: 26px;
-                color: #000000;
-                width: 100%;
-                display: inline-block;
-            }
-            
-            button {
-                font-size: 14px;
-                line-height: 21px;
-                text-transform: uppercase;
-                padding: 16px 0 14px 0;
-                margin-top: 20px;
-                border-radius: 5px;
-                color: $color_white;
-                width: 100%;
-                background-image: linear-gradient(45deg, #30296f 0%, #452e85 45.52%, #4d308d 61.49%, #5f359f 100%) !important;
-            }
-        }
-
-        &__seperator {
-            display: inherit;
-            text-align: center;
-            margin-top: 35px;
-            margin-bottom: 25px;
-        }
-
-        &__add-new-button {
-            padding: 17px 0;
-            text-transform: uppercase;
-            font-weight: 600;
-            border-radius: 5px;
-            border: 1px solid $color_black;
-            text-align: center;
-            font-size: 14px;
-            line-height: 21px;
-        }
-    }
-
     &--shipping-details {
         padding-top: 50px;
 
         &__title {
             font-size: 16px;
             line-height: 23px;
-            margin-bottom: 22px;
+            margin-bottom: 10px;
         }
 
         &__form-field {
@@ -182,24 +127,88 @@
             color: #000000;
             width: 100%;
             display: inline-block;
+
+
         }
 
-        form {
-            .dropdownjs>div.fakeinput {
+        .dropdownjs {
+            width: 100%;
 
-                span {
-                    background: url(../../images/custom-select-down-arrow.png) 100% 7px/10px no-repeat;
-                }
+            >ul {
+                width: 100%;
+                max-width: 100%;
             }
         }
 
+        // .fakeinput {
+        //     border: 1px solid #1A3082;
+        //     border-radius: 5px;
+        //     margin-bottom: 25px;
+        // }
+
+        .dropdownjs> {
+            .fakeinput {
+                // font-size: 14px;
+                // line-height: 21px;
+                // font-family: "NeoSans-Std-Regular";
+                // background: #fff;
+                // padding: 19px 29px 15px 13px !important;
+                // color: #555;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+
+                span {
+                    width: 100%;
+                    display: inline-block;
+                    background: url(../../images/custom-select-down-arrow.png) 100% 7px/10px no-repeat;
+                    // background: url(../images/dropdown.svg) 100% (0px / 15px) no-repeat #fff;
+                }
+            }
+
+            ul {
+                padding: 9px 29px 0px 13px !important;
+                box-shadow: none;
+                border: 1px solid #1A3082;
+                border-radius: 5px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+
+                >li {
+                    &:first-child {
+                        padding-top: 10px;
+                        background: url(../images/dropdown.svg) 100% (10px / 15px) no-repeat #fff;
+                        border-bottom: none;
+                    }
 
 
+                    font-size: 14px;
+                    line-height: 21px;
+                    font-family: "NeoSans-Std-Regular";
+                    padding: 10px 0;
+                    margin: 0;
+                    color: #555;
+                    border-bottom: 1px solid #555;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &:first-child {
+
+                        &.selected,
+                        &:active {
+                            color: #555;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &--wakefit-guarantee {
         margin-top: 65px;
-        margin-bottom: 95px;
 
         &__title {
             font-size: 18px;
@@ -211,7 +220,7 @@
             font-size: 14px;
             line-height: 21px;
             color: $color_black;
-            margin-bottom: 22px;
+            margin-bottom: 25px;
         }
 
         &--list {
@@ -219,7 +228,6 @@
                 padding: 24px 0;
                 padding-left: 40px;
                 border-top: 1px solid #E0E0E0;
-                position: relative;
 
                 &::before {
                     content: url(#{$img_url}tick-mark.png);

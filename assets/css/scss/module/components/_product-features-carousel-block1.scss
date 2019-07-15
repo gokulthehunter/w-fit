@@ -1,10 +1,9 @@
 .product-features-carousel1 {
     margin-bottom: 35px;
     & .swiper-slide {
-        border-radius: 5px;
+        border-radius: 10px;
         margin-bottom: 20px;
         box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.08);
-        overflow: hidden;
     }
     & .swiper-pagination-bullets{
         bottom: 40px;

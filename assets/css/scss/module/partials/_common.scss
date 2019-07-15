@@ -111,10 +111,7 @@ ul {
 }
 
 .menu-open-scroll-lock,
-.sleep-score-popup-open-scroll-lock,
-.cart-open-scroll-lock,
-.select-mattress-popup-open-scroll-lock,
-.know-measure-size-popup-open-scroll-lock {
+.sleep-score-popup-open-scroll-lock {
     overflow: hidden;
 }
 
@@ -153,78 +150,5 @@ ul {
         display: inline-block;
         vertical-align: middle;
         background: transparent;
-    }
-}
-
-.swiper-pagination-bullet:focus {
-    outline: none;
-}
-
-.dropdownjs {
-    width: 100%;
-    // padding: 0px 15px 0px 13px !important;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    // border: 1px solid #1A3082;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-    >ul {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .fakeinput {
-        padding: 11px 14px;
-        background: transparent;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-
-        span {
-            width: 100%;
-            display: inline-block;
-            background: url(../../images/custom-select-down-arrow.png) 100% 13px/10px no-repeat;
-        }
-    }
-
-    ul {
-        padding: 9px 29px 0px 13px !important;
-        box-shadow: none;
-        border: 1px solid #1A3082;
-        border-radius: 5px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-
-        >li {
-            &:first-child {
-                padding-top: 10px;
-                background: url(../images/dropdown.svg) 100% (10px / 15px) no-repeat #fff;
-                border-bottom: none;
-            }
-
-
-            font-size: 14px;
-            line-height: 21px;
-            padding: 10px 0;
-            margin: 0;
-            color: #555;
-            border-bottom: 1px solid #555;
-
-            &:last-child {
-                border-bottom: none;
-            }
-
-            &:first-child {
-
-                &.selected,
-                &:active {
-                    color: #555;
-                }
-            }
-        }
     }
 }

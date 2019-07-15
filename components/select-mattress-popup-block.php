@@ -59,15 +59,15 @@
                         <span class="plus">+</span>
                     </div>
                 </div>
+                <div class="select-mattress-popup--know-measure-size">
+                    <div class="select-mattress-popup--know-measure-size__text">
+                        <span>Know how to measure your mattress size?</span> 
+                    </div>
+                    <div class="select-mattress-popup--know-measure-size__button">
+                        <a href="">Learn how</a>   
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="select-mattress-popup--know-measure-size">
-        <div class="select-mattress-popup--know-measure-size__text">
-            <span>Know how to measure your mattress size?</span> 
-        </div>
-        <div class="select-mattress-popup--know-measure-size__button">
-            <a href="">Learn how</a>   
         </div>
     </div>
     <a class="select-mattress-popup--close-button" href="#">

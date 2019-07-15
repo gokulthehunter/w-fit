@@ -1,64 +1,28 @@
 .header {
     padding: 15px 25px;
     background: $color_white;
+    
     overflow-x: hidden !important;
-
-    @include media-lg-min {
-        padding: 15px 70px;
-        overflow: unset !important;
-    }
-
-    &--inner {
+    &--inner{
         position: relative;
         display: flex;
         align-items: center;
         @extend %transition;
     }
-
     &--menu-icon {
         display: inline-block;
-
-        @include media-lg-min {
-            display: none;
-        }
     }
 
     &--logo {
         display: inline-block;
         margin-left: 20px;
         width: 45%;
-
-        @include media-lg-min {
-            margin-left: 0;
-            width: 10%;
-        }
-    }
-
-    &--signup-login {
-        display: none;
-        margin: 0 15px;
-        position: absolute;
-        right: 40px;
-
-        &__text {
-            color: $color_black;
-            font-size: 14px;
-            line-height: 17px;
-        }
-
-        @include media-lg-min {
-            display: block;
-        }
     }
 
     &--get-help {
         margin: 0 15px;
         position: absolute;
         right: 40px;
-
-        @include media-lg-min {
-            display: none;
-        }
 
         &__text {
             font-size: 12px;
@@ -75,10 +39,6 @@
         border-left: 1px solid #DEDEDE;
         padding-left: 15px;
 
-        @include media-lg-min {
-            border-left: none;
-        }
-
         &__count {
             font-size: 10px;
             line-height: 17px;
@@ -89,56 +49,6 @@
             position: absolute;
             top: -8px;
             right: -8px;
-        }
-    }
-
-    &--desktop-menu {
-        display: none;
-        width: 80%;
-
-        ul {
-            overflow: unset;
-        }
-
-        &__item {
-            display: inline-block;
-            border-bottom: none;
-            margin: 0 28px;
-
-            a {
-                color: $color_black;
-            }
-
-            &.has-children {
-                position: relative;
-
-                &:hover .desktop-sub-menu{
-                    visibility: visible;
-                    opacity: 1;
-                }
-            }
-        }
-
-        @include media-lg-min {
-            display: block;
-            text-align: center;
-        }
-
-        .desktop-sub-menu {
-            display: block;
-            position: absolute;
-            top: 15px;
-            left: 0;
-            min-width: 250px;
-            text-align: left;
-            padding-top: 20px; 
-            visibility: hidden;
-            opacity: 0;
-            @extend %transition;
-
-            .header--desktop-menu__item {
-                margin: 5px 0;
-            }
         }
     }
 }
@@ -225,7 +135,6 @@
     &--footer {
         margin-top: 65px;
         margin-bottom: 30px;
-
         &__text {
             font-size: 14px;
             line-height: 26px;
@@ -239,17 +148,12 @@
             color: $color_black;
         }
     }
-
-    &--element-wrap {
+    &--element-wrap{
         position: absolute;
         width: auto;
         bottom: 0;
         left: 25px;
         right: 25px;
-    }
-
-    @include media-lg-min {
-        display: none;
     }
 }
 
@@ -271,14 +175,14 @@
             color: $color_black;
         }
 
-        // &.has-children::after {
-        //     content: '\f054';
-        //     position: absolute;
-        //     right: 0;
-        //     top: 20px;
-        //     color: $color_black;
-        //     font-family: "Fontawesome";
-        // }
+        &.has-children::after {
+            content: '\f054';
+            position: absolute;
+            right: 0;
+            top: 20px;
+            color: $color_black;
+            font-family: "Fontawesome";
+        }
 
         &.has-children .sub-menu {
             display: none;
@@ -448,7 +352,6 @@
 .master-wrap {
     position: relative;
     overflow-x: hidden !important;
-
     &--overlay {
         position: fixed;
         width: 100%;
@@ -459,6 +362,6 @@
     }
 }
 
-main {
+main{
     @extend %transition;
 }

@@ -1,8 +1,8 @@
 // :::::::  libs ::::::: 
 @import 'module/libs/bootstrap'; //v4.3.1
 @import 'module/libs/nice-select'; //v1.0
-@import 'module/libs/swiper.4.5.0'; //v4.5.0s
-@import 'module/libs/dropdown'; //v5.9.0
+@import 'module/libs/swiper.4.5.0'; //v4.5.0
+// @import 'module/libs/fontawesome/fontawesome.scss'; //v5.9.0
 
 
 // :::::::  partials ::::::: 
@@ -45,7 +45,6 @@
 @import 'module/components/sleep-score-calculator-popup';
 @import 'module/components/select-mattress-popup-block';
 @import 'module/components/know-size-popup-block';
-@import 'module/components/know-measure-size-popup-block';
 @import 'module/components/cart';
 
 
@@ -65,7 +64,7 @@
 @import 'module/pages/single-product';
 @import 'module/pages/checkout';
 // @import 'module/pages/products';
-// @import 'module/pages/login-and-reg';
+@import 'module/pages/login';
 // @import 'module/pages/dashboard';
 // @import 'module/pages/media';
 // @import 'module/pages/technology';
@@ -78,3 +77,4 @@
 // @import 'module/pages/blog';
 // @import 'module/pages/life-ceat';
 // @import 'module/pages/awards';
+@import 'module/pages/payment';
