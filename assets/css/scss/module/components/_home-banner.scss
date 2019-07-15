@@ -1,0 +1,22 @@
+.home-banner {
+    height: 70vh;
+    background: url(#{$img_url}home-banner/banner-image.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 55px;
+
+    &--title h4{
+        font-size: 34px;
+        line-height: 29px;
+        font-weight: 500;
+        color: $color_main;
+        font-family: $title_font;
+    }
+
+    &--subtitle h5 {
+        margin: 10px 0;
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 400;
+        color: $color_black;
+    }
+}

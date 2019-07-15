@@ -1,0 +1,80 @@
+// :::::::  libs ::::::: 
+@import 'module/libs/bootstrap'; //v4.3.1
+@import 'module/libs/nice-select'; //v1.0
+@import 'module/libs/swiper.4.5.0'; //v4.5.0s
+@import 'module/libs/dropdown'; //v5.9.0
+
+
+// :::::::  partials ::::::: 
+@import 'module/partials/vars';
+@import 'module/partials/breakpoints';
+@import 'module/partials/keyframes';
+@import 'module/partials/mixins';
+@import 'module/partials/extends';
+@import 'module/partials/fonts';
+@import 'module/partials/base';
+@import 'module/partials/common';
+
+// ::::::: components ::::::: 
+@import 'module/components/shared/header';
+@import 'module/components/shared/footer';
+@import 'module/components/shared/common-loader';
+@import 'module/components/shared/button';
+// other comps
+@import 'module/components/home-banner';
+@import 'module/components/featured-slider';
+@import 'module/components/best-seller';
+@import 'module/components/features-block';
+@import 'module/components/review-block';
+@import 'module/components/design-block';
+@import 'module/components/sleep-score-block';
+@import 'module/components/news-block';
+@import 'module/components/call-to-action-block';
+@import 'module/components/why-wakefit-block';
+
+@import 'module/components/product-description-block';
+@import 'module/components/product-details-block';
+@import 'module/components/product-features-carousel-block1';
+@import 'module/components/product-features-carousel-block2';
+@import 'module/components/offer-popup';
+@import 'module/components/single-product-specifications-block';
+@import 'module/components/product-offer-block';
+@import 'module/components/single-product-review-block';
+@import 'module/components/other-products-block';
+@import 'module/components/question-answers-block';
+@import 'module/components/sleep-score-calculator-popup';
+@import 'module/components/select-mattress-popup-block';
+@import 'module/components/know-size-popup-block';
+@import 'module/components/know-measure-size-popup-block';
+@import 'module/components/cart';
+
+
+
+
+
+
+
+
+// product page related
+// @import 'module/components/product-filter';
+// @import 'module/components/product-list';
+
+// :::::::  pages ::::::: 
+@import 'module/pages/index';
+@import 'module/pages/listing';
+@import 'module/pages/single-product';
+@import 'module/pages/checkout';
+// @import 'module/pages/products';
+// @import 'module/pages/login-and-reg';
+// @import 'module/pages/dashboard';
+// @import 'module/pages/media';
+// @import 'module/pages/technology';
+// @import 'module/pages/contact-us';
+// @import 'module/pages/investors';
+// @import 'module/pages/events';
+// @import 'module/pages/ctr';
+// @import 'module/pages/tyre-care';
+@import 'module/pages/about';
+// @import 'module/pages/blog';
+// @import 'module/pages/life-ceat';
+// @import 'module/pages/awards';

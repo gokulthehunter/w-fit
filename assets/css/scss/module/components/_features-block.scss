@@ -1,0 +1,84 @@
+.features-block {
+    padding: 60px 0;
+    &--title {
+        h3 {
+            font-size: 28px;
+            line-height: 34px;
+            color: $color_main;
+            font-weight: 500;
+            font-family: $title_font;
+        }
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            color: $color_grey;
+            padding-bottom: 35px;
+        }
+    }
+    &--each {
+        &--title {
+            width: 90%;
+            position: relative;
+            h3 {
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 400;
+                color: $color_black;
+            }
+            h4 {
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 400;
+                color: $color_grey;
+                margin-top: 7px;
+            }
+        }
+        &--content {
+            width: 90%;
+            @include media-lg-min {
+                & {
+                   display: block !important; 
+                }
+            }
+            p {
+                font-size: 12px;
+                line-height: 22px;
+                color: $color_black;
+            }
+        }
+    }
+    &.accordian-block {
+        .features-block--each {
+            padding: 10px 0;
+            border-top: 1px solid $color_lightergrey;
+            border-bottom: 1px solid $color_lightergrey;
+            @include media-lg-min {
+                & {
+                   border: none; 
+                }
+            }
+            &--title {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0px;
+                    width: 20px;
+                    height: 16px;
+                    background: url(#{$img_url}features-block/plus-icon.svg) center center no-repeat;
+                    transform-origin: center;
+                    transform: rotate(0deg);
+                    transition: all 0.2s ease;
+                    @include media-lg-min {
+                        & {
+                            background: none;
+                        }
+                    }
+                }
+            }
+            &.active .features-block--each--title:after {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

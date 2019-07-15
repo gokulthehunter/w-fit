@@ -1,0 +1,14 @@
+.listing-home{
+    height: 40vh;
+    background: url(#{$img_url}listing/home-bg.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    &--heading{
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 500;
+        font-family: $title_font;
+        margin-top: 50px;
+        color: #2E2A6F;
+    }
+}

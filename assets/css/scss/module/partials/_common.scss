@@ -1,0 +1,230 @@
+body {
+    background-color: #fff;
+    font-weight: 400;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    color: #000000;
+    font-family: $body_font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #353535;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background-color: #FF005D;
+}
+
+::selection {
+    color: white;
+    background-color: #FF005D;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.body-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 100;
+    display: none;
+}
+
+.dummy {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.dummy div {
+    width: 100%;
+    height: 2px;
+}
+
+.pad-top-20 {
+    padding-top: 20px;
+}
+
+.pad-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background: $color_main;
+    opacity: 0.14;
+
+    &.swiper-pagination-bullet-active {
+        opacity: 1;
+    }
+}
+
+.menu-open-scroll-lock,
+.sleep-score-popup-open-scroll-lock,
+.cart-open-scroll-lock,
+.select-mattress-popup-open-scroll-lock,
+.know-measure-size-popup-open-scroll-lock {
+    overflow: hidden;
+}
+
+.number-change {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: flex;
+
+    span {
+        cursor: pointer;
+    }
+
+    .minus,
+    .plus {
+        width: 33%;
+        background: none;
+        border-radius: 0;
+        padding: 3px 0;
+        border: 0;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        color: $color_black;
+    }
+
+    input {
+        width: 33%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 26px;
+        border: 0;
+        border-left: 1px solid rgba(0, 0, 0, 0.25);
+        border-right: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 0;
+        display: inline-block;
+        vertical-align: middle;
+        background: transparent;
+    }
+}
+
+.swiper-pagination-bullet:focus {
+    outline: none;
+}
+
+.dropdownjs {
+    width: 100%;
+    // padding: 0px 15px 0px 13px !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    // border: 1px solid #1A3082;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    >ul {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .fakeinput {
+        padding: 11px 14px;
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        span {
+            width: 100%;
+            display: inline-block;
+            background: url(../../images/custom-select-down-arrow.png) 100% 13px/10px no-repeat;
+        }
+    }
+
+    ul {
+        padding: 9px 29px 0px 13px !important;
+        box-shadow: none;
+        border: 1px solid #1A3082;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        >li {
+            &:first-child {
+                padding-top: 10px;
+                background: url(../images/dropdown.svg) 100% (10px / 15px) no-repeat #fff;
+                border-bottom: none;
+            }
+
+
+            font-size: 14px;
+            line-height: 21px;
+            padding: 10px 0;
+            margin: 0;
+            color: #555;
+            border-bottom: 1px solid #555;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:first-child {
+
+                &.selected,
+                &:active {
+                    color: #555;
+                }
+            }
+        }
+    }
+}

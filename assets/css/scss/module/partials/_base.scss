@@ -1,0 +1,137 @@
+*{box-sizing: border-box}
+body{padding:0;margin: 0;font-family: $body_font;overflow-x:hidden;}
+a{text-decoration: none;
+    &:hover{text-decoration: none;}
+}
+li{list-style: none;}
+button{outline: none;box-shadow: none;background: none;border:none;
+    &:focus,&:active{outline: none;}
+}
+.img{
+    &-fluid{max-width: 100%;}
+}
+// nice select adjust
+select{display: none;
+    option:disabled,option[disabled]{display: none;}
+}
+
+// d-none d-lg-block d-lg-none
+
+
+@include media-xs-min {
+    .display-xs-block {
+        display: block !important;
+    }
+    .display-xs-none {
+        display: none !important;
+    }
+}
+@include media-sm-min {
+    .display-sm-block {
+        display: block !important;
+    }
+    .display-sm-none {
+        display: none !important;
+    }
+}
+@include media-md-min {
+    .display-md-block {
+        display: block !important;
+    }
+    .display-md-none {
+        display: none !important;
+    }
+}
+@include media-lg-min {
+    .display-lg-block {
+        display: block !important;
+    }
+    .display-lg-none {
+        display: none !important;
+    }
+}
+@include media-xl-min {
+    .display-xl-block {
+        display: block !important;
+    }
+    .display-xl-none {
+        display: none !important;
+    }
+}
+@include media-hd-min {
+    .display-hd-block {
+        display: block !important;
+    }
+    .display-hd-none {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media all and (min-width: 1800px){
+//     .display-hd-block{
+//         display:block !important
+//     }
+//     .display-hd-none{
+//         display:none !important
+//     }
+// }
+// @media all and (min-width: 1200px){
+//     .display-xl-block{
+//         display:block !important
+//     }
+//     .display-xl-none{
+//         display:none !important
+//     }
+// }
+// @media all and (min-width: 960px){
+//     .display-lg-block{
+//         display:block !important
+//     }
+//     .display-lg-none{
+//         display:none !important
+//     }
+//     .features-block--each--title h3 {
+//         font-size: 42px;
+//     }
+// }
+// @media all and (min-width: 720px){
+//     .display-md-block{
+//         display:block !important
+//     }
+//     .display-md-none{
+//         display:none !important
+//     }
+
+// }
+// @media all and (min-width: 576px){
+//     .display-sm-block{
+//         display:block !important
+//     }
+//     .display-sm-none{
+//         display:none !important
+//     }
+// }
+// @media all and (min-width: 414px){
+//     .display-xs-block{
+//         display:block !important
+//     }
+//     .display-xs-none{
+//         display:none !important
+//     }
+//     .features-block--each--title h3 {
+//         font-size: 22px;
+//     }
+// }

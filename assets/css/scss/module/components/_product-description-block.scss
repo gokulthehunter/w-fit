@@ -1,0 +1,64 @@
+.product-description{
+    margin: 30px 0 45px 0;
+    &--sub-title{
+        font-size: 15px;
+        line-height: 22px;
+        color: $color_lightgrey;
+        margin-bottom: 5px;
+    }
+    &--title{
+        font-size: 22px;
+        line-height: 25px;
+        color: $color_black;
+        margin-bottom: 20px;
+        font-family: $title_font;
+    }
+    &--text{
+       font-size: 14px;
+       line-height: 21px;
+       color: $color_black;
+       margin-top: 15px;
+    }
+    &--price-block{
+        margin-top: 30px;
+        h5{
+            font-size: 16px;
+            line-height: 21px;
+            color: #9D9D9D;
+            margin-right: 30px;
+            display: inline-block;
+            span{
+                margin-left: 10px;
+                color: #579ED8;
+            }
+        }
+    }
+    &--features-block{
+        margin-top: 20px;
+        ul{
+            list-style: none;
+            text-align: left;
+            li{
+                border-top: 1px solid #E0E0E0;
+                padding: 20px 0;
+                color: $color_black;
+                font-size: 14px;
+                line-height: 12px;
+                &::before{
+                    content: url(#{$img_url}tick-mark.png);
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    &--button{
+        width: 100% !important;
+        text-transform: uppercase;
+        width: 322.93px;
+        height: 51px;
+        background: linear-gradient(45deg, #30296f 0%, #452e85 45.52%, #4d308d 61.49%, #5f359f 100%) !important;
+        &-block{
+            margin-top: 10px;
+        }
+    }
+}

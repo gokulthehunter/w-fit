@@ -1,0 +1,68 @@
+.single-product-review-block{
+    background: #F2F5F8;
+    padding: 60px 0;
+    &--title{
+        font-size: 28px;
+        line-height: 35px;
+        color: $color_main;
+        font-family: $title_font;
+        font-weight: 500;
+    }
+    &--description{
+        font-size: 14px;
+        line-height: 21px;
+        color: $color_black;
+        margin: 15px 10% 0 10%;
+    }
+    &--review-point{
+        font-size: 30px;
+        line-height: 16px;
+        color: $color_black;
+        margin-top: 40px;
+        font-weight: 500;
+    }
+    &--stars{
+        font-size: 21px;
+        line-height: 21px;
+        color: #F3D26A;
+        margin-top: 10px;
+    }
+    &--review-count{
+        font-size: 14px;
+        line-height: 21px;
+        color: $color_black;
+        margin-top: 20px;
+    }
+    &--add-review-link{
+        font-size: 12px;
+        line-height: 19px;
+        color: #3D36B2;
+        margin-top: 20px;
+        text-decoration: underline;
+        margin-left: 5px;
+
+    }
+    &--platform-wise-review{
+        margin-top: 55px;
+        &__star-rating{
+            font-size: 12px;
+            line-height: 12px;
+            color: #F3D26A;
+            margin-top: 12px;
+            margin-bottom: 8px
+        }
+    }    
+    .review-block--slider{
+        padding-bottom: 40px;
+        .swiper-slide {
+            width: 90%;
+            text-align: left;
+        }
+        .swiper-pagination-bullets {
+            bottom: 0;
+        }
+    }  
+    .view-all-reviews-button{
+        margin-top: 80px;
+    }
+}

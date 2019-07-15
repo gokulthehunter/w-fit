@@ -1,0 +1,125 @@
+
+.footer {
+    overflow-x: hidden !important;
+    padding: 50px 0 85px 0;
+    // background-color: rgba(2,2,150,1);
+    // background: @include filter-gradient(#020296, #5c349d, vertical);
+    // background: @include background-image(linear-gradient(top, rgba(2,2,150,1) 0%, rgba(91,52,155,1) 100%));
+
+    background: rgba(2,2,150,1);
+    background: -moz-linear-gradient(top, rgba(2,2,150,1) 0%, rgba(91,52,155,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(2,2,150,1)), color-stop(100%, rgba(12,52,157,1)));
+    background: -webkit-linear-gradient(top, rgba(2,2,150,1) 0%, rgba(91,52,155,1) 100%);
+    background: -o-linear-gradient(top, rgba(2,2,150,1) 0%, rgba(91,52,155,1) 100%);
+    background: -ms-linear-gradient(top, rgba(2,2,150,1) 0%, rgba(91,52,155,1) 100%);
+    background: linear-gradient(to bottom, rgba(2,2,150,1) 0%, rgba(91,52,155,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020296', endColorstr='#5c349d', GradientType=0 );
+
+    .container {
+        @extend %transition;
+    }
+    @include media-lg-min {
+        & > .container > .row {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 90%;
+                background:$color_grey;
+                left: 64.5%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    
+    &--links {
+        &--row {
+            color: $color_white;
+        
+            &--title h5, &--title-links ul li a {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                color: inherit;
+                padding-bottom: 10px;
+            }
+    
+            &--title-links ul li a {
+                margin-bottom: 10px;
+            }
+        
+            &--link-each {
+                font-size: 14px;
+                line-height: 31px;
+                font-weight: 400;
+                opacity: 0.5;
+                color: inherit;
+                & ul li a {
+                    color: inherit;
+                }
+            }
+    
+            .col-6:nth-child(3), .col-6:nth-child(4) {
+                padding-top: 70px;
+                @include media-lg-min {
+                    padding-top: 0;
+                }
+            }
+    
+        }
+        
+    }
+
+    &--support {
+        padding-top: 40px;
+        @include media-lg-min {
+            padding-top: 0;
+        }
+        &--title {
+            border-top: 1px solid rgba(255,255,255,0.5);
+            padding-top: 60px;
+            @include media-lg-min {
+                border-top: none;
+                padding-top: 0;
+            }
+            h5 {
+                font-size: 34px;
+                line-height: 35px;
+                color: $color_white;
+                font-weight: 300;
+                font-family: $title_font;
+            }
+        }
+        &--link {
+            padding-top: 10px;
+            a {
+                color: $color_white;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                padding: 5px 0;
+            }
+        }
+    }
+
+    &--working-hours {
+        padding-top: 25px;
+        &--text {
+            border-top: 1px solid rgba(255,255,255,0.5);
+            padding-top: 25px;
+            @include media-lg-min {
+                border-top: none;
+            }
+            p {
+                font-size: 12px;
+                line-height: 19px;
+                font-weight: 500;
+                color: $color_white;
+                opacity: 0.5;
+            }
+        }
+    }
+    
+}

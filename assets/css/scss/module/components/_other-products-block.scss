@@ -1,0 +1,52 @@
+.other-products-block {
+    padding-bottom: 60px;
+
+    &--title h3 {
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 500;
+        color: $color_main;
+        padding-bottom: 30px;
+        font-family: $title_font;
+    }
+
+    &--slider {
+        &--slides {
+            white-space: nowrap;
+            overflow-x: scroll;
+        }
+
+        .each-slide {
+            width: 90%;
+            display: inline-block;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        &--each {
+            width: 100%;
+            white-space: normal;
+
+            h4 {
+                font-size: 14px;
+                line-height: 23px;
+                font-weight: 400;
+                color: $color_grey;
+                padding-top: 20px;
+                padding-bottom: 5px;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 23px;
+                font-weight: 400;
+                color: $color_black;
+                padding-bottom: 10px;
+                width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+.know-mattress-size-popup-block{
+    display: none;
+    padding: 45px 0;
+    text-align: center;
+    background: #2E2A6F;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    height: 85vh;
+    &--title{
+        font-size: 26px;
+        line-height: 24px;
+        color: $color_white;
+        font-family: $title_font;
+    }
+    &--sub-title{
+        font-size: 12px;
+        line-height: 26px;
+        color: $color_white;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    &--visualization-block{
+        &--inner{
+            position: relative;
+            font-size: 12px;
+            line-height: 26px;
+            display: inline-block; 
+        }
+        margin: 0 35px;
+        &__length-text{
+            color: $color_white;
+            opacity: 0.25;
+            position: absolute;
+            left: -70px;
+            top: 84px;
+            transform: rotate(-90deg);
+        }
+        &__length-number{
+            transform: rotate(-90deg);
+            color: $color_white;
+            position: absolute;
+            left: -110px;
+            top: 82px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            &::before {
+                content: ''; 
+                border-top: 1px dashed $color_white;
+                margin: 0 10px 0 0;
+                flex: 1 0 20px;
+            }
+            &::after{
+                content: '';
+                border-top: 1px dashed $color_white;
+                margin: 0 0 0 10px;
+                flex: 1 0 20px;
+            }
+        }
+        &__width-text {
+            color: $color_white;
+            opacity: 0.25;
+            position: absolute;
+            right: -60px;
+            bottom: 0;
+        }
+
+        &__width-number {
+            color: $color_white;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            overflow: hidden;
+            margin-top: 10px;
+            &::before {
+                content: '';
+                border-top: 1px dashed $color_white;
+                margin: 0 10px 0 10px;
+                flex: 1 0 10px;
+            }
+
+            &::after {
+                content: '';
+                border-top: 1px dashed $color_white;
+                margin: 0 10px 0 10px;
+                flex: 1 0 10px;
+            }
+            &--bg-image{
+                background: url(#{$img_url}know-mattress-size-popup-block/width-number-bg-image.jpg);
+                opacity: 0.4;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &--size-selector-tab{
+        .nav-tabs{
+            margin-top: 55px;
+            padding: 0 10px;
+            border-bottom-color: rgba(255,255,255,0.17);
+            .nav-item{
+                margin: 0 auto;
+                margin-bottom: -2px;
+                .nav-link{
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: $color_white;
+                    opacity: 0.4;
+                    &.active {
+                        opacity: 1;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid $color_white;
+                    }
+                }
+                
+            }
+        }
+        .tab-content{
+            margin-top: 25px;
+            padding-left: 25px;
+            .tab-pane{
+                white-space: nowrap;
+                overflow-x: scroll;
+                .bed-size{
+                    display: inline-block;
+                    width: 30%;
+                    font-size: 14px;
+                    line-height: 12px;
+                    padding: 9px 25px 7px;
+                    background: rgba(0, 0, 0, 0.10);
+                    color: $color_white;
+                    border-radius: 5px;
+                    &.active{
+                        background-color: $color_white;
+                        color: $color_black;
+
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    &--close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 14px 20px;
+        color: $color_white;
+    }
+}

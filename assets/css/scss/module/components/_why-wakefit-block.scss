@@ -1,0 +1,45 @@
+.why-wakefit-outer {
+    padding-top: 45px;
+    padding-bottom: 65px;
+    background: $color_lightblue;
+    @include media-lg-min {
+        background: transparent;
+    }
+}
+.why-wakefit-inner {
+    padding: 25px 0;
+    border-top: 1px solid $color_lightergrey; 
+    border-bottom: 1px solid $color_lightergrey;
+    @include media-lg-min {
+        border-top: none;
+        border-bottom: none;
+        padding: 60px;
+        background: $color_lightblue;
+    }
+    h3 {
+        position: relative;
+        margin-bottom: 20px;
+        span {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $color_black;
+            width: 60%;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 25px;
+            top: 0px;
+            width: 30px;
+            height: 25px;
+            background: url(#{$img_url}news-block/plus-icon-new.svg) center center no-repeat;
+        }
+    }
+    p {
+        font-size: 12px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $color_grey;
+    }
+}

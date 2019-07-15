@@ -1,0 +1,57 @@
+.offer-popup{
+    display: none;
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 25px;
+    right:25px;
+    z-index: 101;
+    background: url(#{$img_url}offer-popup/bg-image.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    &--inner{
+        padding: 45px;
+        padding-top: 60px
+    }
+    &--title{
+        font-size: 33px;
+        line-height: 40px;
+        color: $color_black;
+    }
+    &--sub-title {
+        font-size: 24px;
+        line-height: 31px;
+        color: $color_black;
+    }
+    &--description {
+        font-size: 12px;
+        line-height: 20px;
+        color: $color_black;
+        margin-top: 20px;
+        font-weight: 400;
+    }
+    &--copy-coupon-code{
+        cursor: pointer;
+        padding: 15px 25px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px dashed #707070;
+        &__text{
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $color_black;
+            margin-left: 15px;
+        }
+    }
+    &--close-button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 13px 19px;
+        &__icon{
+            color: $color_black;
+        }
+    }
+}

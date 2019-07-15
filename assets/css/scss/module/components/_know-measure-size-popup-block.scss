@@ -1,0 +1,76 @@
+.know-measure-size-popup {
+    height: 85vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background: #8AB8DE;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: none;
+
+    &--title {
+        font-size: 26px;
+        line-height: 33px;
+        color: $color_white;
+    }
+
+    &--sub-title {
+        font-size: 12px;
+        line-height: 19px;
+        margin-top: 5px;
+        color: $color_white;
+    }
+
+    &--close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 14px 20px;
+
+        &__icon {
+            color: $color_white;
+        }
+    }
+
+    &--carousel {
+        padding-bottom: 150px;
+        .swiper-button-prev {
+            position: absolute;
+            left: unset;
+            right: 220px;
+            bottom: 70px;
+            top: unset;
+            margin-top: 0px;
+            width: 50px;
+            height: 50px;
+            background: url(../../images/know-measeure-size-popup/prev-button.png) center center no-repeat;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            z-index: 1111;
+        }
+
+        .swiper-button-next {
+            position: absolute;
+            left: unset;
+            right: 120px;
+            bottom: 70px;
+            top: unset;
+            margin-top: 0px;
+            width: 50px;
+            height: 50px;
+            background: url(../../images/know-measeure-size-popup/next-button.png) center center no-repeat;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            z-index: 1111;
+        }
+
+    }
+
+    // display: none;
+
+}
