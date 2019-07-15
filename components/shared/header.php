@@ -160,7 +160,7 @@
 
 <!-- Cart Section -->
 <?php //include('../components/cart.php') ?>
-
+ 
 <div class="master-wrap">
     <div class="master-wrap--overlay"></div>
     
