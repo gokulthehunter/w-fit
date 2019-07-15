@@ -7,6 +7,8 @@
 </head>
 <body>
     <div class="body-overlay"></div>
+    <!-- Dummy Div to calculate the padding. Donot Delete. Used in scripts -->
+    <div class="dummy"><div class="container"><div></div></div></div>
 
     <!-- Select Mattress Mobile Fixed Ribbon -->
     <div class="select-mattress d-lg-none">
@@ -143,7 +145,7 @@
                         <div class="select-mattress--discounted-price">
                             <h4>&#8377; 9000 <span class="select-mattress--actual-price">&#8377; 7000</span><span class="select-mattress--discount-percentage">Save 12%(&#8377;2000)</span></h4>
                         </div>
-                        <div class="select-mattress--block">
+                        <div id="rejin" class="select-mattress--block">
                             <!-- To select box -->
                             <div class="select-mattress--block--select">
                                 <div class="select-mattress--block--select--wrap">
@@ -152,7 +154,7 @@
                                         <span class="select-mattress--block--select--option--select-text">Single Size Mattress</span>
                                    </div>
                                 </div>
-                                <div class="select-mattress--block--select--option">
+                                <div  class="select-mattress--block--select--option">
                                     <ul>
                                         <li class="active">
                                             <div>
@@ -214,7 +216,7 @@
                             </select>
                         </div>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-7">
                                 <div class="select-mattress--block--height">
                                     <select class="select-mattress-popup--mattress-height--select--wrap custom-select-box">
                                         <option value="_">Mattress Height</option>
@@ -224,9 +226,10 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-5">
                                 <div class="select-mattress-popup--quantity">
                                     <div class="number-change">
+                                        <span class="word">Qty</span>
                                         <span class="minus">-</span>
                                         <input type="text" value="1"/>
                                         <span class="plus">+</span>
@@ -279,10 +282,11 @@
                 </div>
             </div>
         </div>
+
         <!-- Product Features Carousel Two Section -->
-        <?php include('../components/product-features-carousel-block2.php') ?>
+        <?php include('../components/design-block.php') ?>
         <!-- Single Product Review Section -->
-        <?php include('../components/single-product-review-block.php') ?>
+        <?php include('../components/review-block.php') ?>
         <!-- Quastion And Answers Section -->
         <?php include('../components/question-answers-block.php') ?>
         <!-- Sleep Score Section -->
@@ -305,7 +309,7 @@
     <!-- scripts[end] -->
     <!-- page dependancy scripts -->
     <!-- page scripts -->
-    <script src="<?php echo $assetsurl ?>js/page-js/index.js"></script>
+
     <script src="<?php echo $assetsurl ?>js/page-js/single-product.js"></script>
     <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.1/js/all.js?ver=5.9.0"></script>
 </body>

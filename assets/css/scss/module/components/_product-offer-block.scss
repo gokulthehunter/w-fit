@@ -3,6 +3,12 @@
     position: relative;
     background: #EFF0FF;
     border-radius: 5px;
+    @include media-lg-min {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 70px;
+
+    }
     &--offer-text{
         border-radius: 20px;
         padding: 7px 17px;
@@ -21,12 +27,30 @@
         line-height: 30px;
         color: $color_black;
         font-family: $title_font;
+        @include media-lg-min {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        span {
+            display: block;
+            @include media-lg-min {
+                display: inline-block;
+            }
+        }
     }
     &--description{
         font-size: 12px;
         line-height: 19px;
         color: $color_black;
         margin-top: 15px;
+        @include media-lg-min {
+            font-size: 16px;
+            line-height: 23px;
+            margin-top: 20px;
+            span {
+                display: block;
+            }
+        }
     }
     &--link{
         font-size: 12px;
@@ -34,5 +58,10 @@
         color: #2E2A6F;
         text-decoration: underline;
         margin-top: 17px;
+        @include media-lg-min {
+            font-size: 16px;
+            line-height: 16px;
+            margin-top: 30px;
+        }
     }
 }

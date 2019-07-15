@@ -41,7 +41,7 @@
                     <div class="col-md-4">
                         <div class="review-block--site-rating--each text-center">
                             <div class="review-block--site-rating--each--image w-75 mx-auto">
-                                <img class="mw-100" src="assets/images/featured-slider/amazon-logo.jpg" alt="amazon">
+                                <img class="mw-100" src="<?php echo $imagesurl ?>featured-slider/amazon-logo.jpg" alt="amazon">
                             </div>
                             <div class="review-block--site-rating--each--rating">
                                 <i class="fas fa-star"></i>
@@ -58,7 +58,7 @@
                     <div class="col-md-4">
                     <div class="review-block--site-rating--each text-center">
                             <div class="review-block--site-rating--each--image w-75 mx-auto">
-                                <img class="mw-100" src="assets/images/featured-slider/amazon-logo.jpg" alt="amazon">
+                                <img class="mw-100" src="<?php echo $imagesurl ?>featured-slider/amazon-logo.jpg" alt="amazon">
                             </div>
                             <div class="review-block--site-rating--each--rating">
                                 <i class="fas fa-star"></i>
@@ -75,7 +75,7 @@
                     <div class="col-md-4">
                     <div class="review-block--site-rating--each text-center">
                             <div class="review-block--site-rating--each--image w-75 mx-auto">
-                                <img class="mw-100" src="assets/images/featured-slider/amazon-logo.jpg" alt="amazon">
+                                <img class="mw-100" src="<?php echo $imagesurl ?>featured-slider/amazon-logo.jpg" alt="amazon">
                             </div>
                             <div class="review-block--site-rating--each--rating">
                                 <i class="fas fa-star"></i>

@@ -2,18 +2,34 @@ jQuery(document).ready(function ($) {
 
     (function ($) {
         "use strict";
+            var vW = $(window).width();
+            var vH = $(window).height();
 
         function productFeaturesCarousel1 () {
+
+            if(vW > 991) {
+                var widthDifference = (vW - $('.dummy div').width()) / 2;
+                $('.product-features-carousel1-wrap').css('padding-left', widthDifference);
+            }
+
             if ($('.product-features-carousel1').length) {
                 var productFeaturesCarousel1Swiper = new Swiper('.product-features-carousel1', {
+                    slidesPerView: 'auto',
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true
                     },
-                    // autoplay: {
-                    //     delay: 5000,
-                    // },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
                     spaceBetween: 50,
+                    breakpoints: {
+                        // when window width is <= 991px
+                        991: {
+                            slidesPerView: 1,
+                        }
+                    }
                 });
             }
         }

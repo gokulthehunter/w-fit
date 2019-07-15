@@ -1,9 +1,28 @@
+.product-features-carousel1-wrap {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    @include media-lg-min {
+        & > .container {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}
+
 .product-features-carousel1 {
     margin-bottom: 35px;
+    overflow: hidden;
+    @include media-lg-min {
+        padding-bottom: 30px;
+    }
     & .swiper-slide {
         border-radius: 10px;
         margin-bottom: 20px;
         box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.08);
+        @include media-lg-min {
+            width: 65%;
+        }
     }
     & .swiper-pagination-bullets{
         bottom: 40px;
@@ -19,11 +38,48 @@
         }
     }
 
+    .swiper-button-prev {
+        left: unset;
+        right: 150px;
+        bottom: 25px;
+        top: unset;
+        margin-top: 0px;
+        width: 50px;
+        height: 50px;
+        background: url(#{$img_url}product-features-carousel-block1/prev-button.png) center center no-repeat;
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    .swiper-button-next {
+        left: unset;
+        right: 100px;
+        bottom: 25px;
+        top: unset;
+        margin-top: 0px;
+        width: 50px;
+        height: 50px;
+        background: url(#{$img_url}product-features-carousel-block1/next-button.png) center center no-repeat;
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
     &--content-block {
         padding: 25px;
         background: $color_white;
         display: flex;
-
+        @include media-lg-min {
+            position: absolute;
+            left: 55px;
+            bottom: 55px;
+            border-radius: 5px;
+            -webkit-box-shadow: 3px 1px 34px -15px rgba(0,0,0,0.5);
+            -moz-box-shadow: 3px 1px 34px -15px rgba(0,0,0,0.5);
+            box-shadow: 3px 1px 34px -15px rgba(0,0,0,0.5);
+        }
         &__icon {
             width: 20%;
             display: inline-block;
@@ -32,6 +88,10 @@
         &__text {
             width: 40%;
             display: inline-block;
+            @include media-lg-min {
+                width: 80%;
+                padding-left: 10px;
+            }
 
             & .title {
                 font-size: 14px;

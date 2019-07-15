@@ -16,7 +16,7 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="design-block--slider--each">
-                                <img class="w-100" src="assets/images/design-block/durability.jpg" alt="durability image">
+                                <img class="w-100" src="<?php echo $imagesurl ?>design-block/durability.jpg" alt="durability image">
                                 <div class="design-block--slider--each--content">
                                     <h3>Durability</h3>
                                     <p>
@@ -28,7 +28,7 @@
 
                         <div class="swiper-slide">
                             <div class="design-block--slider--each">
-                                <img class="w-100" src="assets/images/design-block/durability.jpg" alt="durability image">
+                                <img class="w-100" src="<?php echo $imagesurl ?>design-block/durability.jpg" alt="durability image">
                                 <div class="design-block--slider--each--content">
                                     <h3>Durability</h3>
                                     <p>
@@ -40,7 +40,7 @@
                         
                         <div class="swiper-slide">
                             <div class="design-block--slider--each">
-                                <img class="w-100" src="assets/images/design-block/durability.jpg" alt="durability image">
+                                <img class="w-100" src="<?php echo $imagesurl ?>design-block/durability.jpg" alt="durability image">
                                 <div class="design-block--slider--each--content">
                                     <h3>Durability</h3>
                                     <p>
@@ -52,7 +52,7 @@
                         
                         <div class="swiper-slide">
                             <div class="design-block--slider--each">
-                                <img class="w-100" src="assets/images/design-block/durability.jpg" alt="durability image">
+                                <img class="w-100" src="<?php echo $imagesurl ?>design-block/durability.jpg" alt="durability image">
                                 <div class="design-block--slider--each--content">
                                     <h3>Durability</h3>
                                     <p>
@@ -99,13 +99,13 @@
             </div>
             <div class="col-6 pr-0">
                 <div class="design-block--img-inner">
-                    <div class="design-block--img-inner--each section-bgimg img-active" data-sectionBgImg="assets/images/design-block/durability-large.jpg">
+                    <div class="design-block--img-inner--each section-bgimg img-active" data-sectionBgImg="<?php echo $imagesurl ?>design-block/durability-large.jpg">
 
                     </div>
                     <div class="design-block--img-inner--each section-bgimg" style="background: red;">
 
                     </div>
-                    <div class="design-block--img-inner--each section-bgimg" data-sectionBgImg="assets/images/design-block/durability-large.jpg">
+                    <div class="design-block--img-inner--each section-bgimg" data-sectionBgImg="<?php echo $imagesurl ?>design-block/durability-large.jpg">
 
                     </div>
                 </div>
