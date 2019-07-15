@@ -14,7 +14,7 @@
     <div class="select-mattress d-lg-none">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 pr-1">
                         <div class="select-mattress--discounted-price">
                             <h4>&#8377; 9000</h4>
                         </div>
