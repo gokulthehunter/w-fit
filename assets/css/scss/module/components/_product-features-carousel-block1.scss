@@ -8,13 +8,17 @@
             padding: 0;
         }
     }
+    .swiper-container {
+        height: auto;
+    }
 }
 
 .product-features-carousel1 {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
     overflow: hidden;
     @include media-lg-min {
-        padding-bottom: 30px;
+        padding-bottom: 60px;
     }
     & .swiper-slide {
         border-radius: 10px;
@@ -25,7 +29,10 @@
         }
     }
     & .swiper-pagination-bullets{
-        bottom: 40px;
+        bottom: 0px;
+        @include media-lg-min {
+            bottom: 15px;
+        }
     }
 
     & .swiper-pagination-bullet {
@@ -41,7 +48,7 @@
     .swiper-button-prev {
         left: unset;
         right: 150px;
-        bottom: 25px;
+        bottom: 0;
         top: unset;
         margin-top: 0px;
         width: 50px;
@@ -55,7 +62,7 @@
     .swiper-button-next {
         left: unset;
         right: 100px;
-        bottom: 25px;
+        bottom: 0;
         top: unset;
         margin-top: 0px;
         width: 50px;

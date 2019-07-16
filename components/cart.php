@@ -47,6 +47,7 @@
     <div class="cart--promo-code-ribbon">
         Add <span>MONSOON10</span> to get FLAT 10% off on all products.
     </div>
+<<<<<<< HEAD
     <div class="cart--offer-slider--wrapper">
         <div class="cart--offer-slider swiper-container" data-slidesPerView="auto" data-spaceBetween=10 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="auto" data-slidesPerView480="auto" data-slidesPerView640="auto" data-slidesPerView991="auto">
             <div class="swiper-wrapper">
@@ -60,6 +61,19 @@
                                 <span class="offer-slide--original-price"><i class="icon">&#8377</i>999</span>
                                 <span class="offer-slide--save-percentage">Save 20%</span>
                             </div>
+=======
+    <div class="cart--offer-slider swiper-container normal-swiper" data-slidesPerView="auto" data-spaceBetween=10 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="auto" data-slidesPerView480="auto" data-slidesPerView640="auto" data-slidesPerView991="auto">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide cart--offer-slider__each offer-slide">
+                <div class="row">
+                    <div class="col-7">
+                        <div>
+                            <h4 class="offer-slide--title">Combo Offer</h4>
+                            <h3 class="offer-slide--name">Wakefit Sleeping Pillow</h3>
+                            <span class="offer-slide--discounted-value"><i class="icon">&#8377</i>699.00</span>
+                            <span class="offer-slide--original-price"><i class="icon">&#8377</i>999</span>
+                            <span class="offer-slide--save-percentage">Save 20%</span>
+>>>>>>> dev-rj
                         </div>
                         <div class="col-4">
                             <button class="offer-slide--add-now-button" type="submit">Add Now</button>

@@ -10,7 +10,7 @@
             <div class="col-12">
 
                 <!-- Slider main container -->
-                <div class="design-block--slider swiper-container" data-slidesPerView="1" data-spaceBetween=0 data-loop="true" data-centeredSlides="false" data-autoplay="true" data-delay="3000" data-slidesPerView320="1" data-slidesPerView480="1" data-slidesPerView640="1" data-slidesPerView991="1">
+                <div class="design-block--slider swiper-container normal-swiper" data-slidesPerView="1" data-spaceBetween=0 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="1" data-slidesPerView480="1" data-slidesPerView640="1" data-slidesPerView991="1">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->

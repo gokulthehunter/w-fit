@@ -2,9 +2,11 @@
     padding-top: 60px;
     padding-bottom: 50px;
     background: $color_white;
+
     @include media-lg-min {
         background: $color_lightblue;
         padding: 0;
+        margin-top: 65px;
         &--inner {
             padding: 50px 0;
             &--each {
@@ -47,11 +49,15 @@
     }
     &--slider {
         padding-bottom: 40px;
-        
+        .swiper-slide {
+            padding: 12px;
+            border-radius: 5px;
+        }
         &--each {
-            -webkit-box-shadow: 2px 1px 25px -16px rgba(0,0,0,0.2);
-            -moz-box-shadow: 2px 1px 25px -16px rgba(0,0,0,0.2);
-            box-shadow: 2px 1px 25px -16px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            -webkit-box-shadow: 2px 1px 25px -16px rgba(0,0,0,0.5);
+            -moz-box-shadow: 2px 1px 25px -16px rgba(0,0,0,0.5);
+            box-shadow: 2px 1px 25px -16px rgba(0,0,0,0.5);
             img {
                 border-radius: 4px;
             }

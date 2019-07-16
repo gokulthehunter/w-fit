@@ -8,6 +8,12 @@
         color: $color_main;
         padding-bottom: 30px;
         font-family: $title_font;
+        @include media-lg-min {
+            padding: 110px 0 60px 0;
+            text-align: center !important;
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
 
     &--slider {
@@ -20,6 +26,10 @@
             width: 90%;
             display: inline-block;
             margin-right: 10px;
+
+            @include media-lg-min {
+                width: 38%;
+            }
 
             &:last-child {
                 margin-right: 0px;

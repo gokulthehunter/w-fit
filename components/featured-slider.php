@@ -1,5 +1,5 @@
 <!-- Slider main container -->
-<div class="featured-slider swiper-container" data-slidesPerView="2" data-spaceBetween=0 data-loop="true" data-centeredSlides="true" data-autoplay="true" data-delay="5000" data-slidesPerView320="2" data-slidesPerView480="2" data-slidesPerView640="2" data-slidesPerView991="1">
+<div class="featured-slider swiper-container normal-swiper" data-slidesPerView="2" data-spaceBetween=0 data-loop="true" data-centeredSlides="true" data-autoplay="true" data-delay="5000" data-slidesPerView320="2" data-slidesPerView480="2" data-slidesPerView640="2" data-slidesPerView991="1">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->

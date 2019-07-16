@@ -1,7 +1,7 @@
 <div class="know-measure-size-popup">
     <h1 class="know-measure-size-popup--title">How to measure mattress</h1>
     <p class="know-measure-size-popup--sub-title">Lorem ipsum dolor sit amet.</p>
-    <div class="know-measure-size-popup--carousel swiper-container" data-slidesPerView="auto" data-spaceBetween=10 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="auto" data-slidesPerView480="auto" data-slidesPerView640="auto" data-slidesPerView991="auto">
+    <div class="know-measure-size-popup--carousel swiper-container normal-swiper" data-slidesPerView="auto" data-spaceBetween=10 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="auto" data-slidesPerView480="auto" data-slidesPerView640="auto" data-slidesPerView991="auto">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="<?php echo $imagesurl; ?>know-measeure-size-popup/slider-image-1.png" alt="wakefit">

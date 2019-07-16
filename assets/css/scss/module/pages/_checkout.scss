@@ -8,6 +8,19 @@
             padding: 13px;
         }
     }
+    @include media-lg-min {
+        > .container {
+            > .row {
+                margin-left: -15px;
+                margin-right: -15px;
+                > [class*=col-] {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+     
 
     &--order-summary {
         background: #F7F7F7;
@@ -15,6 +28,10 @@
         margin-left: -25px;
         margin-right: -25px;
         padding-bottom: 20px;
+        @include media-lg-min {
+            margin-left: 0;
+            margin-right: 0;
+        }
 
         &__title {
             font-size: 16px;
@@ -38,6 +55,9 @@
 
     &--contact-details {
         padding-top: 50px;
+        @include media-lg-min {
+            padding-top: 0;
+        }
 
         &__title {
             font-size: 20px;

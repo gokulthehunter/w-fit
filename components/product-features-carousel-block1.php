@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="product-features-carousel1">
+                <div class="swiper-container normal-swiper product-features-carousel1" data-slidesPerView="auto" data-spaceBetween=50 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="1" data-slidesPerView480="1" data-slidesPerView640="1" data-slidesPerView991="1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product-features-carousel1--image">

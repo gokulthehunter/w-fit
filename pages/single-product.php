@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-12 p-0">
                         <div class="product-image-carousel-wrap">
-                            <div class="swiper-container product-image-carousel">
+                            <div class="swiper-container normal-swiper product-image-carousel" data-slidesPerView="1" data-spaceBetween=0 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="1" data-slidesPerView480="1" data-slidesPerView640="1" data-slidesPerView991="1">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide" data-bg="<?php echo $imagesurl ?>single-product/product-image-carousel/1.jpg">
 
@@ -101,7 +101,7 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="product-image-carousel-wrap">
-                            <div class="swiper-container product-image-carousel">
+                            <div class="swiper-container normal-swiper product-image-carousel"  data-slidesPerView="1" data-spaceBetween=0 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="1" data-slidesPerView480="1" data-slidesPerView640="1" data-slidesPerView991="1">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide" data-bg="<?php echo $imagesurl ?>single-product/product-image-carousel/1.jpg">
 
@@ -119,8 +119,9 @@
 
                                     </div>
                                 </div>
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            
                         </div>  
                     </div>
                     <div class="col-4">
@@ -286,7 +287,7 @@
         <!-- Product Features Carousel Two Section -->
         <?php include('../components/design-block.php') ?>
         <!-- Single Product Review Section -->
-        <?php include('../components/review-block.php') ?>
+        <?php include('../components/single-product-review-block.php') ?>
         <!-- Quastion And Answers Section -->
         <?php include('../components/question-answers-block.php') ?>
         <!-- Sleep Score Section -->

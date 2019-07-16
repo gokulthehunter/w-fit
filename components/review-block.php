@@ -99,7 +99,7 @@
         <div class="review-block--customer-review">
 
             <!-- Slider main container -->
-            <div class="review-block--slider swiper-container" data-slidesPerView="auto" data-spaceBetween=15 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="auto" data-slidesPerView480="auto" data-slidesPerView640="auto" data-slidesPerView991="auto">
+            <div class="review-block--slider swiper-container normal-swiper" data-slidesPerView="auto" data-spaceBetween=15 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="auto" data-slidesPerView480="auto" data-slidesPerView640="auto" data-slidesPerView991="auto">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
