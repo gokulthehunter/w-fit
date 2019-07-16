@@ -1,4 +1,4 @@
-::: instructions Ceat Spl Project :::
+::: instructions Project :::
 
 git pushing
 -----------
