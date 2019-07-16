@@ -14,3 +14,33 @@
 
 
 }
+.select-payament{
+    list-style: none;
+    border:solid 1px $color_black;
+    border-radius: 5px;
+    margin-bottom: 40px;
+
+    &--title-margin{
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 14px;
+        font-weight: 600;
+        color: $color_black;
+    }
+    span{
+        color: $color_lightgrey;
+        font-size: 12px;
+    }
+
+    li{
+        border-bottom: solid 1px $color_black;
+        padding: 10px 0;
+    }
+
+    li:last-child{
+        border:none;
+    }
+
+}
