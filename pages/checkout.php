@@ -240,13 +240,10 @@
                                 <span class="checkout--shipping-details__form-field">
                                     <label for="">State</label>
                                     <select name="" id="" class="custom-select-box">
-<<<<<<< HEAD
                                         <option value="Kerala">Kerala</option>
                                         <option value="Karnataka">Karnataka</option>
                                         <option value="Goa">Goa</option>
-=======
                                         <option value="State">State</option>
->>>>>>> dev-rj
                                     </select>
                                 </span>
                                 <span class="checkout--shipping-details__form-field">
@@ -256,12 +253,9 @@
                                 <span class="checkout--shipping-details__form-field">
                                     <label for="">Country</label>
                                     <select name="" id="" class="custom-select-box">
-<<<<<<< HEAD
                                         <option value="India">India</option>
                                         <option value="India">India</option>
-=======
                                         <option value="country">country</option>
->>>>>>> dev-rj
                                     </select>
                                 </span>
 

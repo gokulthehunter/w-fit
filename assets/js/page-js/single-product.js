@@ -340,7 +340,6 @@ jQuery(document).ready(function ($) {
 
             singleProductReviewBlockSpacing();
 
-<<<<<<< HEAD
             commonCarouselInit();
 
             productImageCarousel();
@@ -348,7 +347,6 @@ jQuery(document).ready(function ($) {
             productFeaturesCarousel1();
 
             productFeaturesCarousel2();
-=======
             featuresBlockAccordianBlock();
 
             productFeaturesCarousel1();
@@ -356,7 +354,6 @@ jQuery(document).ready(function ($) {
             commonCarouselInit();
 
             // productFeaturesCarousel2();
->>>>>>> dev-rj
 
             selectMattressPopup();
 

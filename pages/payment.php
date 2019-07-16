@@ -141,13 +141,58 @@
                             </div>
                         </div>
 
-
-
-
+                    </div>
+                </div>
+                <!-- Select Payment -->
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-6">
+                     <h2 class="shipment-summary--title select-payament--title-margin">Select Payment</h2>
+                     <form action="">
+                        <ul class="select-payament">
+                            <li>
+                                <div class="row">
+                                    <div class="col-1 text-center">
+                                        <input type="radio">
+                                    </div>
+                                    <div class="col-10">
+                                        <h3>Wallets</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-1">
+                                        <input type="radio">
+                                    </div>
+                                    <div class="col-10">
+                                        <h3>Debit/Credit Cards</h3>
+                                        <span>Visa, Master Card, Amex and more</span>
+                                    </div>  
+                                </div>                             
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-1">
+                                        <input type="radio">
+                                    </div>
+                                    <div class="col-10">
+                                        <h3>COD</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     </form>
 
 
                     </div>
                 </div>
+
+
+
+
+
+
+
             </div>
 
 

@@ -1,12 +1,16 @@
 <?php
     // local [gokul]
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     global $compurl;
+=======
+>>>>>>> dev-rk
     $siteurl = 'http://localhost/w-fit/';
     $assetsurl = 'http://localhost/w-fit/assets/';
     $imagesurl = 'http://localhost/w-fit/assets/images/';
     $compurl = 'http://localhost/w-fit/components/';
+<<<<<<< HEAD
 =======
     $siteurl = 'http://localhost/html/W-FIT/';
     $assetsurl = 'http://localhost/html/W-FIT/assets/';
@@ -24,3 +28,6 @@
     // $imagesurl = 'http://192.168.10.101/w-fit/assets/images/';
     // $compurl = 'http://192.168.10.101/w-fit/components/';
 ?>
+=======
+    // ::: ip :::
+>>>>>>> dev-rk
