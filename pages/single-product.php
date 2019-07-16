@@ -26,7 +26,7 @@
                     <div class="col-8">
                         <div class="select-mattress--button">
                             <a href="#">Select Mattress</a>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
