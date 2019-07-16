@@ -1,18 +1,29 @@
 .single-product-review-block{
     background: #F2F5F8;
     padding: 60px 0;
+    @include media-lg-min {
+        background: $color_white;
+    }
     &--title{
         font-size: 28px;
         line-height: 35px;
         color: $color_main;
         font-family: $title_font;
         font-weight: 500;
+        @include media-lg-min {
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
     &--description{
         font-size: 14px;
         line-height: 21px;
         color: $color_black;
         margin: 15px 10% 0 10%;
+        @include media-lg-min {
+            width: 50%;
+            margin-left: 25%;
+        }
     }
     &--review-point{
         font-size: 30px;
@@ -20,6 +31,9 @@
         color: $color_black;
         margin-top: 40px;
         font-weight: 500;
+        @include media-lg-min {
+            margin-top: 70px;
+        }
     }
     &--stars{
         font-size: 21px;
@@ -42,8 +56,22 @@
         margin-left: 5px;
 
     }
+
+    &--platform {
+        @include media-lg-max {
+            width: 100%;
+            max-width: 100%;
+        }
+        
+    }
+    &--platform-wrap {
+        padding: 0 20px;
+    }
     &--platform-wise-review{
         margin-top: 55px;
+        @include media-lg-min {
+            margin-top: 70px;
+        }
         &__star-rating{
             font-size: 12px;
             line-height: 12px;
@@ -52,17 +80,66 @@
             margin-bottom: 8px
         }
     }    
+    &--main-sec {
+        position: relative;
+        @include media-lg-min {
+            padding-top: 50px;
+        }
+        .bg-color-placer {
+            position:absolute;
+            height: 100%;
+            width: 700px;
+            background: $color_lightblue;
+        }
+    }
+
+    .review-block--customer-review {
+        @include media-lg-min {
+            padding-left: 50px;
+        }
+    }
     .review-block--slider{
         padding-bottom: 40px;
+        @include media-lg-min {
+            padding-bottom: 70px;
+            .swiper-pagination {
+                left: -6%;
+            }
+            .swiper-button-next {
+                right: 170px;
+            }
+            .swiper-button-prev {
+                right: 220px;
+            }
+        }
         .swiper-slide {
             width: 90%;
             text-align: left;
+            @include media-lg-min {
+                width: 38%;
+            }
         }
         .swiper-pagination-bullets {
             bottom: 0;
         }
+        &--each {
+            &--desc {
+                padding-top: 0;
+            }
+            &--rating {
+                padding-top: 35px;
+            }
+        }
     }  
     .view-all-reviews-button{
         margin-top: 80px;
+        @include media-lg-min {
+            margin-top: 0;
+            float: left;
+            position: relative;
+            z-index: 1;
+            text-align: left !important;
+            transform: translate(50px,-36px);
+        }
     }
 }

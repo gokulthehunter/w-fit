@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
             // Swiper Slider Init
             var sliders = [];
             
-            $('.swiper-container').each(function(index, element){
+            $('.swiper-container.normal-swiper').each(function(index, element){
                 $(this).addClass('s'+index);
                 $(this).find(".swiper-button-prev").addClass("btn-prev-" + index);
                 $(this).find(".swiper-button-next").addClass("btn-next-" + index);

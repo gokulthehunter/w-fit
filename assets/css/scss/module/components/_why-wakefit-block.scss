@@ -25,6 +25,11 @@
             font-weight: 400;
             color: $color_black;
             width: 60%;
+            @include media-lg-min {
+                font-size: 22px;
+                line-height: 30px;
+                width: 80%;
+            }
         }
         &:after {
             content: "";
@@ -41,5 +46,10 @@
         line-height: 19px;
         font-weight: 400;
         color: $color_grey;
+        @include media-lg-min {
+            font-size: 14px;
+            line-height: 21px;
+            width: 90%;
+        }
     }
 }

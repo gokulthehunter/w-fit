@@ -3,7 +3,7 @@
 
     @include media-lg-min {
         padding-top: 80px;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
         // 68px header - 30 margin for thumbnails
         height: calc(100vh - 118px);
     }
@@ -30,7 +30,7 @@
         bottom: -5px;
 
         @include media-lg-min {
-            bottom: 23px;
+            bottom: 0px;
         }
     }
 

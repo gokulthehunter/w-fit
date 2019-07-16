@@ -27,6 +27,30 @@
                                 <h2>Orthopedic Memory<br>Foam Mattress</h2>
                             </a>
                         </div>
+
+                        <div class="each-slide">
+                            <a href="#" class="other-products-block--slider--each">
+                                <img class="w-100" src="<?php echo $imagesurl ?>other-products-block/other-products-one.jpg" alt="wakefit">
+                                <h4>Wakefit</h4>
+                                <h2>Orthopedic Memory<br>Foam Mattress</h2>
+                            </a>
+                        </div>
+
+                        <div class="each-slide">
+                            <a href="#" class="other-products-block--slider--each">
+                                <img class="w-100" src="<?php echo $imagesurl ?>other-products-block/other-products-one.jpg" alt="wakefit">
+                                <h4>Wakefit</h4>
+                                <h2>Orthopedic Memory<br>Foam Mattress</h2>
+                            </a>
+                        </div>
+
+                        <div class="each-slide">
+                            <a href="#" class="other-products-block--slider--each">
+                                <img class="w-100" src="<?php echo $imagesurl ?>other-products-block/other-products-one.jpg" alt="wakefit">
+                                <h4>Wakefit</h4>
+                                <h2>Orthopedic Memory<br>Foam Mattress</h2>
+                            </a>
+                        </div>
                         
                     </div>
 

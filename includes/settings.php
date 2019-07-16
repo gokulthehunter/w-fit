@@ -1,8 +1,8 @@
 <?php
     // local [gokul]
-    $siteurl = 'http://localhost/html/wakefit/';
-    $assetsurl = 'http://localhost/html/wakefit/assets/';
-    $imagesurl = 'http://localhost/html/wakefit/assets/images/';
-    $compurl = 'http://localhost/html/wakefit/components/';
+    $siteurl = 'http://localhost/html/W-FIT/';
+    $assetsurl = 'http://localhost/html/W-FIT/assets/';
+    $imagesurl = 'http://localhost/html/W-FIT/assets/images/';
+    $compurl = 'http://localhost/html/W-FIT/components/';
     // ::: ip :::
 ?>

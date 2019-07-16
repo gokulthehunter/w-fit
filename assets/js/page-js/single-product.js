@@ -39,6 +39,13 @@ jQuery(document).ready(function ($) {
             }, 5000);
         }
 
+        function singleProductReviewBlockSpacing() {
+            var width = $('.single-product-review-block--main-sec .container').width();
+            var widthDifference = (vW -width) / 2;
+            $('.single-product-review-block--main-sec .bg-color-placer').width(width);
+            $('.single-product-review-block--main-sec .bg-color-placer').css('left',widthDifference)
+        }
+
         function featuresBlockAccordianBlock() {
             if(vW < 992) {
                 if($('.features-block.accordian-block').length) {
@@ -62,10 +69,18 @@ jQuery(document).ready(function ($) {
             }
         }
 
+        function productFeaturesCarousel1() {
+
+            if(vW > 991) {
+                var widthDifference = (vW - $('.dummy div').width()) / 2;
+                $('.product-features-carousel1-wrap').css('padding-left', widthDifference);
+            }
+        }
+
 
         function commonCarouselInit() {
             var sliders = [];
-            $('.swiper-container').each(function(index, element){
+            $('.swiper-container.normal-swiper').each(function(index, element){
                 $(this).addClass('s'+index);
                 $(this).find(".swiper-button-prev").addClass("btn-prev-" + index);
                 $(this).find(".swiper-button-next").addClass("btn-next-" + index);
@@ -126,21 +141,6 @@ jQuery(document).ready(function ($) {
             });
         }
 
-        // Product Image Carousel Initialization
-        function productImageCarousel() {
-            if ($('.product-image-carousel').length) {
-                var productImageCarouselSwiper = new Swiper('.product-image-carousel', {
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
-                    },
-                    renderBullet: function (className) {
-                        return '<span class="' + className + '"></span>';
-                    },
-                    
-                });
-            }
-        }
 
         // Product Image Carousel Pagination
         setTimeout(function () { 
@@ -150,56 +150,13 @@ jQuery(document).ready(function ($) {
                 for (var i = 0; i < slideCount; i++) {
                     var bgImg = $(this).find('.swiper-slide').eq(i).attr('data-bg');
                     $(this).find('.swiper-slide').eq(i).css('background-image', 'url(' + bgImg + ')');
-                    // $(this).find('.swiper-pagination .swiper-pagination-bullet').eq(i).append('<img class="img-fluid" src="'+bgImg+'" alt="wakefit">');
                     $(this).closest('.product-image-carousel-wrap').find('.swiper-pagination .swiper-pagination-bullet').eq(i).css('background-image', 'url(' + bgImg + ')');
                 }
             });
         }, 1500);
 
-        function productFeaturesCarousel1() {
 
-            if(vW > 991) {
-                var widthDifference = (vW - $('.dummy div').width()) / 2;
-                $('.product-features-carousel1-wrap').css('padding-left', widthDifference);
-            }
 
-            if ($('.product-features-carousel1').length) {
-                var productFeaturesCarousel1Swiper = new Swiper('.product-features-carousel1', {
-                    slidesPerView: 'auto',
-                    loop: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    spaceBetween: 50,
-                    breakpoints: {
-                        // when window width is <= 991px
-                        991: {
-                            slidesPerView: 1,
-                        }
-                    }
-                });
-            }
-        }
-
-        function productFeaturesCarousel2() {
-            if ($('.product-features-carousel2').length) {
-                var productFeaturesCarousel2Swiper = new Swiper('.product-features-carousel2', {
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
-                    },
-                    // autoplay: {
-                    //     delay: 5000,
-                    // },
-                    spaceBetween: 50,
-                });
-            }
-        }
 
         //To-top Position Adjustment On Scroll
         $('.footer').waypoint(function (direction) {
@@ -354,13 +311,13 @@ jQuery(document).ready(function ($) {
 
             sleepScoreCalculatorPopupAppear();
 
+            singleProductReviewBlockSpacing();
+
             featuresBlockAccordianBlock();
 
-            commonCarouselInit();
-
-            // productImageCarousel();
-
             productFeaturesCarousel1();
+
+            commonCarouselInit();
 
             // productFeaturesCarousel2();
 

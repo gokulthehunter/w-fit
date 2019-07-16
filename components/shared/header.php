@@ -159,7 +159,13 @@
 </div>
 
 <!-- Cart Section -->
-<?php include('./components/cart.php') ?>
+<?php 
+    global $cartURL;
+    $cartURL = $compurl.'cart.php';
+    // echo $cartURL;
+// include('http://localhost/html/W-FIT/components/cart.php')
+
+?>
 
 <div class="master-wrap">
     <div class="master-wrap--overlay"></div>

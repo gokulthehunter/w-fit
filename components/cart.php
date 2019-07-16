@@ -47,7 +47,7 @@
     <div class="cart--promo-code-ribbon">
         Add <span>MONSOON10</span> to get FLAT 10% off on all products.
     </div>
-    <div class="cart--offer-slider swiper-container" data-slidesPerView="auto" data-spaceBetween=10 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="auto" data-slidesPerView480="auto" data-slidesPerView640="auto" data-slidesPerView991="auto">
+    <div class="cart--offer-slider swiper-container normal-swiper" data-slidesPerView="auto" data-spaceBetween=10 data-loop="true" data-centeredSlides="false" data-autoplay="false" data-delay="3000" data-slidesPerView320="auto" data-slidesPerView480="auto" data-slidesPerView640="auto" data-slidesPerView991="auto">
         <div class="swiper-wrapper">
             <div class="swiper-slide cart--offer-slider__each offer-slide">
                 <div class="row">

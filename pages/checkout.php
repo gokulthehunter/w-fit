@@ -13,16 +13,20 @@
     <?php include('../components/shared/loader.php') ?>
     <!-- common loader[end] -->
     <main>
-        
+
         <div class="checkout">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-12 col-lg-6">
+
+                    <div class="col-12">
                         <div class="checkout--logo">
                             <a href="#" >
                                 <img src="<?php echo $imagesurl ?>header/wakefit-logo.png" alt="logo">
                             </a>
                         </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 order-lg-2">
                         <div class="checkout--order-summary">
                             <div class="order-summary-show-hide-trigger">
                                 <div class="row no-gutters">
@@ -101,12 +105,86 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <div class="checkout--contact-details">
+                            <h4 class="checkout--contact-details__title">Contact Details</h4>
+                            <h5 class="checkout--contact-details__info">Already have an account <a href="#">Sign in</a></h5>
+                            <form action="#" class="checkout--contact-details__enter-mobile-email">
+                                <input type="text" placeholder="Enter Email / Mobile Number">
+                            </form>
+                        </div>
+                        <div class="checkout--shipping-details">
+                            <h3 class="checkout--shipping-details__title">Shipping Details</h3>
+                            <form action="#">
+                                <span class="checkout--shipping-details__form-field">
+                                    <label for="">First Name</label>
+                                    <input type="text">
+                                </span>
+                                <span class="checkout--shipping-details__form-field">
+                                    <label for="">Last Name</label>
+                                    <input type="text">
+                                </span>
+                                <span class="checkout--shipping-details__form-field">
+                                    <label for="">Address Line 1</label>
+                                    <input type="text">
+                                </span>
+                                <span class="checkout--shipping-details__form-field">
+                                    <label for="">Address Line 2</label>
+                                    <input type="text">
+                                </span>
+                                <span class="checkout--shipping-details__form-field">
+                                    <label for="">City</label>
+                                    <select name="" id="" class="custom-select-box">
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Agra">Agra</option>
+                                    </select>
+                                </span>
+                                <span class="checkout--shipping-details__form-field">
+                                    <label for="">State</label>
+                                    <select name="" id="" class="custom-select-box">
+                                        <option value="State">State</option>
+                                    </select>
+                                </span>
+                                <span class="checkout--shipping-details__form-field">
+                                    <label for="">Pincode</label>
+                                    <input type="text">
+                                </span>
+                                <span class="checkout--shipping-details__form-field">
+                                    <label for="">Country</label>
+                                    <select name="" id="" class="custom-select-box">
+                                        <option value="country">country</option>
+                                    </select>
+                                </span>
+
+                                <button type="submit" class="checkout--checkout-button">Checkout</button>
+                            </form>
+                        </div>
+                        <div class="checkout--wakefit-guarantee">
+                            <h5 class="checkout--wakefit-guarantee__title">Wakefit Mattress Guarantee</h5>
+                            <h6 class="checkout--wakefit-guarantee__sub-title">Every mattress comes with</h6>
+                            <ul class="checkout--wakefit-guarantee--list">
+                                <li class="checkout--wakefit-guarantee--list__item">
+                                    <h5 class="big-text">100 Nights Free</h5>
+                                    <h6 class="small-text">Risk-free returns</h6>
+                                </li>
+                                <li class="checkout--wakefit-guarantee--list__item">
+                                    <h5 class="big-text">10 Years Warranty</h5>
+                                    <h6 class="small-text">Best in India</h6>
+                                </li>
+                                <li class="checkout--wakefit-guarantee--list__item">
+                                    <h5 class="big-text">Free Shipping</h5>
+                                    <h6 class="small-text">Free door step delivery</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             
 
-            <div class="container">
+            <div class="container d-none">
                 <div class="row">
                     <div class="col-12">
                         <div class="checkout--contact-details">
@@ -138,14 +216,14 @@
                                 <span class="checkout--shipping-details__form-field">
                                     <label for="">City</label>
                                     <select name="" id="" class="custom-select-box">
-                                        <option value="">Delhi</option>
-                                        <option value="">Agra</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Agra">Agra</option>
                                     </select>
                                 </span>
                                 <span class="checkout--shipping-details__form-field">
                                     <label for="">State</label>
                                     <select name="" id="" class="custom-select-box">
-                                        <option value="">State</option>
+                                        <option value="State">State</option>
                                     </select>
                                 </span>
                                 <span class="checkout--shipping-details__form-field">
@@ -155,9 +233,10 @@
                                 <span class="checkout--shipping-details__form-field">
                                     <label for="">Country</label>
                                     <select name="" id="" class="custom-select-box">
-                                        <option value="">country</option>
+                                        <option value="country">country</option>
                                     </select>
                                 </span>
+
                                 <button type="submit" class="checkout--checkout-button">Checkout</button>
                             </form>
                         </div>
