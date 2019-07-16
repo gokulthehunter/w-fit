@@ -1,3 +1,15 @@
+
+<div class="pre-header">
+    <div class="pre-header--left-block">
+        <a href="#">Avail <span>No Cost EMI</span></a>
+        <a href="#">Reviews</a>
+    </div>
+    <div class="pre-header--right-block">
+        <a href="#" class="pre-header--right-block__track-order">Track Order</a>
+        <a href="#" class="pre-header--right-block__get-help">Get Help</a>
+    </div>
+    <div class="clearfix"></div>
+</div>
 <header class="header">
     <div class="header--inner">
         <div class="header--menu-icon">
@@ -16,6 +28,24 @@
                 <img src="<?php echo $imagesurl ?>header/wakefit-logo.png" alt="logo">
             </a>        
         </div>
+        <div class="header--desktop-menu">
+            <ul class="">
+                <li class="header--desktop-menu__item has-children">
+                    <a href="#">Mattress</a>
+                    <ul class="desktop-sub-menu">
+                        <li class="header--desktop-menu__item"><a href="#">Orthopaedic Mattress</a></li>
+                        <li class="header--desktop-menu__item"><a href="#">Dual Comfort Mattress</a></li>
+                    </ul>
+                </li>
+                <li class="header--desktop-menu__item"><a href="#">Pillows</a></li>
+                <li class="header--desktop-menu__item"><a href="#">Furniture</a></li>
+                <li class="header--desktop-menu__item"><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+        <div class="header--signup-login">
+            <a href="" class="header--signup-login__text">Login / Signup</a>
+        </div>
+
         <div class="header--get-help"> 
             <a href="#">
                 <img class="header--get-help__icon" src="<?php echo $imagesurl ?>header/get-help-icon.svg" alt="icon">
@@ -23,7 +53,6 @@
             </a>   
         </div>
         <div class="header--cart">
-            <!-- <img class="header--cart__icon" src="<?php echo $imagesurl ?>header/cart-icon.svg" alt="cart">     -->
             <i class="header--cart__icon fa fa-shopping-cart" aria-hidden="true"></i>
             <span class="header--cart__count">1</span>
         </div>
@@ -77,41 +106,37 @@
     </div>
 </div>
 </header>
-<div class="slide-menu">
-    <nav>
-        <ul class="menu">
-            <li class="menu--item has-children">
-                <a href="#">Mattress</a>
-                <ul class="sub-menu">
-                    <li class="menu--item"><a href="#">Orthopaedic Mattress</a></li>
-                    <li class="menu--item"><a href="#">Dual Comfort Mattress</a></li>
-                </ul>
-            </li>
-            <li class="menu--item"><a href="#">Pillows</a></li>
-            <li class="menu--item"><a href="#">Furniture</a></li>
-            <li class="menu--item"><a href="#">Accessories</a></li>
-        </ul>
-        <div class="sub-menu-dump-block">
-            <div class="sub-menu-dump-block--inner">
-                <div class="sub-menu-dump-block--inner__view-all-button">
-                    <a href="#">View all</a>
-                </div>
-                <div class="sub-menu-dump-block--inner__go-back">
-                    <a href="#"></a>
-                </div>
-                <div class="sub-menu-dump-block--inner__content">
-                    <ul>
-                    </ul>
-                </div>
-            </div>            
-        </div>
-    </nav>
-    <div class="slide-menu--close">
-        <a href="#">
-            <i class="slide-menu--close__icon fas fa-times"></i>
-        </a>
-    </div>
+<div class="slide-menu">    
     <div class="slide-menu--element-wrap">
+        <nav>
+            <ul class="menu">
+                <li class="menu--item has-children">
+                    <a href="#">Mattress</a>
+                    <ul class="sub-menu">
+                        <li class="menu--item"><a href="#">Orthopaedic Mattress</a></li>
+                        <li class="menu--item"><a href="#">Dual Comfort Mattress</a></li>
+                    </ul>
+                </li>
+                <li class="menu--item"><a href="#">Pillows</a></li>
+                <li class="menu--item"><a href="#">Furniture</a></li>
+                <li class="menu--item"><a href="#">Accessories</a></li>
+            </ul>
+            <div class="sub-menu-dump-block">
+                <div class="sub-menu-dump-block--inner">
+                    <div class="sub-menu-dump-block--inner__view-all-button">
+                        <a href="#">View all</a>
+                    </div>
+                    <div class="sub-menu-dump-block--inner__go-back">
+                        <a href="#"></a>
+                    </div>
+                    <div class="sub-menu-dump-block--inner__content">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+        </nav>
+
         <form action="#" class="slide-menu--track-order">
             <label for="Track your order">Track your order</label>
             <input type="text" name=""  value="" placeholder="Enter Order Number">
@@ -129,37 +154,43 @@
                 <i class="get-sleep-score--close__icon fas fa-times"></i>
             </a>
         </div>
+    </div>
 
-        <div class="slide-menu--footer">
-            <div class="row no-gutters">
-                <div class="col-4">
-                    <div class="text-left">
-                        <a href="#">
-                            <span class="slide-menu--footer__text">Reviews</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="text-center">
-                        <a class="slide-menu--footer__text" href="#">About</a>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="text-right">
-                        <a href="#">
-                            <i class="slide-menu--footer__my-account-icon fa fa-user" aria-hidden="true"></i>
-                            <span class="slide-menu--footer__text">My Account</span>
-                        </a>                    
-                    </div>
-                    
+    <div class="slide-menu--footer">
+        <div class="row no-gutters">
+            <div class="col-4">
+                <div class="text-left">
+                    <a href="#">
+                        <span class="slide-menu--footer__text">Reviews</span>
+                    </a>
                 </div>
             </div>
+            <div class="col-3">
+                <div class="text-center">
+                    <a class="slide-menu--footer__text" href="#">About</a>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="text-right">
+                    <a href="#">
+                        <i class="slide-menu--footer__my-account-icon fa fa-user" aria-hidden="true"></i>
+                        <span class="slide-menu--footer__text">My Account</span>
+                    </a>                    
+                </div>
+                
+            </div>
         </div>
+    </div>
+    
+    <div class="slide-menu--close">
+        <a href="#">
+            <i class="slide-menu--close__icon fas fa-times"></i>
+        </a>
     </div>
 </div>
 
 <!-- Cart Section -->
-<!-- <?php //include('./components/cart.php') ?> -->
+<?php include($_SERVER['DOCUMENT_ROOT'].'/w-fit/components/cart.php') ?>
 
 
 <div class="master-wrap">

@@ -104,7 +104,24 @@
                 </div>
             </div>
 
-            
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="checkout--shipping-address">
+                            <h3 class="checkout--shipping-address__title">Select Address</h3>
+                            <form action="#" class="checkout--shipping-address__form">
+                                <select name="" id="" class="custom-select-box">
+                                    <option value="B6146, Prestige Sunrise Park, Neotown road">B6146, Prestige Sunrise Park, Neotown road</option>
+                                    <option value="Prestige Sunrise Park, Neotown road">Prestige Sunrise Park, Neotown road</option>
+                                </select>
+                                <button type="submit">Deliver to this address</button>
+                            </form>
+                            <span class="checkout--shipping-address__seperator">Or</span>
+                            <div class="checkout--shipping-address__add-new-button">Add a new address</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="container">
                 <div class="row">
@@ -138,14 +155,16 @@
                                 <span class="checkout--shipping-details__form-field">
                                     <label for="">City</label>
                                     <select name="" id="" class="custom-select-box">
-                                        <option value="">Delhi</option>
-                                        <option value="">Agra</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Agra">Agra</option>
                                     </select>
                                 </span>
                                 <span class="checkout--shipping-details__form-field">
                                     <label for="">State</label>
                                     <select name="" id="" class="custom-select-box">
-                                        <option value="">State</option>
+                                        <option value="Kerala">Kerala</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Goa">Goa</option>
                                     </select>
                                 </span>
                                 <span class="checkout--shipping-details__form-field">
@@ -155,7 +174,8 @@
                                 <span class="checkout--shipping-details__form-field">
                                     <label for="">Country</label>
                                     <select name="" id="" class="custom-select-box">
-                                        <option value="">country</option>
+                                        <option value="India">India</option>
+                                        <option value="India">India</option>
                                     </select>
                                 </span>
                                 <button type="submit" class="checkout--checkout-button">Checkout</button>
