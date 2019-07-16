@@ -1,14 +1,20 @@
 .cart {
     background: $color_white;
     padding: 25px;
+    padding-bottom: 35px;
     position: relative;
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: -110%;
     z-index: 111;
     width: 100vw;
     height: 100vh;
     overflow-y: scroll;
+    @extend %transition;
+
+    @include media-lg-min {
+        width: 390px;
+    }
 
     &--title {
         font-size: 16px;
@@ -37,6 +43,7 @@
         &__name {
             font-size: 16px;
             line-height: 22px;
+            padding-right: 20px;
             color: $color_black;
             font-weight: 400;
         }
@@ -90,11 +97,13 @@
             position: absolute;
             top: 15px;
             right: 0;
+            display: none;
 
             &--close-button {
                 position: absolute;
                 top: 8px;
                 right: 13px;
+
                 &__icon {
                     color: $color_black;
                 }
@@ -157,7 +166,7 @@
         &__down-arrow {
             position: absolute;
             right: 0;
-            top: 0;
+            top: 5px;
             font-size: 12px;
             line-height: 12px;
         }
@@ -214,13 +223,24 @@
     }
 
     &--offer-slider {
-        margin-top: 15px;
+        padding-top: 15px;
+        height: auto;
+        padding-bottom: 30px;
+
+        &--wrapper {
+            width: calc(100% + 50px);
+            margin-left: -25px;
+            margin-right: -25px;
+            padding-left: 25px;
+            box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.05);
+        }
     }
 
     .offer-slide {
-        padding: 25px;
+        padding: 20px;
         border-radius: 5px;
         background: #EFF0FF;
+        width: 90%;
 
         &--title {
             font-size: 12px;
@@ -236,32 +256,33 @@
             margin-bottom: 15px;
         }
 
-        &--discounted-value {
+        &--discounted-price {
             font-size: 12px;
             line-height: 23px;
             font-weight: 500;
         }
 
-        &--original-value {
+        &--original-price {
             font-size: 12px;
             line-height: 23px;
+            margin-right: 10px;
             font-weight: 500;
+            text-decoration: line-through;
         }
 
         &--save-percentage {
             font-size: 12px;
             line-height: 23px;
             color: $color_grey;
-            margin-left: 10px;
             font-weight: 400;
         }
 
         &--add-now-button {
-            font-size: 12px;
+            font-size: 11px;
             line-height: 20px;
             background: $color_white;
             color: $color_black;
-            padding: 10px 16px;
+            padding: 10px 12px;
             padding-bottom: 8px;
             text-transform: uppercase;
             font-weight: 500;
@@ -269,8 +290,13 @@
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
         }
 
-        .col-5 {
+        .col-4 {
             text-align: right;
         }
+    }
+
+    .swiper-pagination-bullets {
+        bottom: 0;
+        left: -12px;
     }
 }

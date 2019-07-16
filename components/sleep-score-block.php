@@ -10,7 +10,7 @@
                     <p>
                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.
                     </p>
-                    <img class="" src="<?php echo $imagesurl; ?>sleep-score-block/design-mattress.png" alt="mattress design image">
+                    <img class="img-fluid" src="<?php echo $imagesurl; ?>sleep-score-block/design-mattress.png" alt="mattress design image">
                 </div>
 
  
@@ -25,7 +25,7 @@
                         <h5>Get your Sleep Score</h5>
                     </div>
                     <div class="button-block text-center">
-                        <a class="white-button long-button black-shadow text-uppercase" href="#">Calculate</a>
+                        <a class="white-button long-button black-shadow" href="#">Calculate</a>
                     </div>
                 </div>
             </div>
