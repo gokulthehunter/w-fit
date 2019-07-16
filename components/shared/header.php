@@ -190,10 +190,8 @@
 </div>
 
 <!-- Cart Section -->
-<<<<<<< HEAD
 <?php include($_SERVER['DOCUMENT_ROOT'].'/w-fit/components/cart.php') ?>
 
-=======
 <?php 
     global $cartURL;
     $cartURL = $compurl.'cart.php';
@@ -201,7 +199,6 @@
 // include('http://localhost/html/W-FIT/components/cart.php')
 
 ?>
->>>>>>> dev-rj
 
 <div class="master-wrap">
     <div class="master-wrap--overlay"></div>
