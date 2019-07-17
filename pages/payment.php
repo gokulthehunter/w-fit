@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- website header[start] -->
-    <?php include('../components/shared/header.php') ?> 
+    <?php //include('../components/shared/header.php') ?> 
     <!-- website header[end] -->
     <!-- common loader[start] -->
     <?php include('../components/shared/loader.php') ?>
@@ -119,7 +119,7 @@
                             </div>
                             <div class="order-summary-show-hide-block">
                                 <div class="order-summary-content">
-                                    <div class="order-summary-content--item">
+                                    <div class="order-summary-content--item payment-shadows--standard">
                                         <div class="row no-gutters">
                                             <div class="col-12">
                                                 <h4 class="order-summary-content--item__name shipment-summary--title">
@@ -144,49 +144,63 @@
                     </div>
                 </div>
                 <!-- Select Payment -->
+                <form action="">
                 <div class="row no-gutters">
                     <div class="col-12 col-lg-6">
                      <h2 class="shipment-summary--title select-payament--title-margin">Select Payment</h2>
-                     <form action="">
+                     
                         <ul class="select-payament">
                             <li>
-                                <div class="row">
-                                    <div class="col-1 text-center">
-                                        <input type="radio">
+                                <div class="v-center">
+                                    <div class="row no-gutters">
+                                        <div class="col-12">
+                                            <input type="radio" id="wallet-option" name="selector" checked>
+                                            <label for="wallet-option">Wallets</label>
+                                            <div class="check"><div class="inside"></div></div>
+                                        </div>
                                     </div>
-                                    <div class="col-10">
-                                        <h3>Wallets</h3>
-                                    </div>
-                                </div>
+                                </div>   
                             </li>
                             <li>
-                                <div class="row">
-                                    <div class="col-1">
-                                        <input type="radio">
+                                <div class="v-center">
+                                    <div class="row no-gutters">
+                                        <div class="col-12">
+                                            <input type="radio" id="cards-option" name="selector">
+                                            <label for="cards-option" class="line-height-hook">Debit/Credit Cards</label>
+                                            <span>Visa, Master Card, Amex and more</span>
+                                            <div class="check"><div class="inside"></div></div>
+                                        </div>
                                     </div>
-                                    <div class="col-10">
-                                        <h3>Debit/Credit Cards</h3>
-                                        <span>Visa, Master Card, Amex and more</span>
-                                    </div>  
-                                </div>                             
+                                </div>                                 
                             </li>
                             <li>
-                                <div class="row">
-                                    <div class="col-1">
-                                        <input type="radio">
+                                <div class="v-center">
+                                    <div class="row no-gutters">
+                                        <div class="col-12">
+                                            <input type="radio" id="cod-option" name="selector">
+                                            <label for="cod-option">COD</label>
+                                            <div class="check"><div class="inside"></div></div>
+                                        </div>
                                     </div>
-                                    <div class="col-10">
-                                        <h3>COD</h3>
-                                    </div>
-                                </div>
+                                </div>    
                             </li>
                         </ul>
-                     </form>
-
-
+                    </div>
+                </div>
+                <div class="row no-gutters ">
+                    <div class="col-12 col-lg-6">
+                      <h2 class="shipment-summary--title select-payament--title-margin">Billing Details</h2>
+                        <div class="form-group">
+                                <input type="checkbox" id="sameAsShipping" checked>
+                                <label for="sameAsShipping">Same as shipping address</label>
+                        </div>
+                      <button type="submit" class="checkout--checkout-button payment-margins--bottom-25">Continue Payement</button>
                     </div>
                 </div>
 
+
+
+            </form>
 
 
 
@@ -206,7 +220,7 @@
 
     </main>
     <!-- website footer[start] -->
-    <?php include('../components/shared/footer.php') ?>
+    <?php //include('../components/shared/footer.php') ?>
     <!-- website footer[end] -->
     <!-- scripts[start] -->
     <?php include('../includes/bottom-scripts.php') ?> 
