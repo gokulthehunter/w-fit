@@ -192,7 +192,7 @@
                       <h2 class="shipment-summary--title select-payament--title-margin">Billing Details</h2>
                         <div class="form-group">
                                 <input type="checkbox" id="sameAsShipping" checked>
-                                <label for="sameAsShipping">Same as shipping address</label>
+                                <label for="sameAsShipping">Same As Shipping Address</label>
                         </div>
                       <button type="submit" class="checkout--checkout-button payment-margins--bottom-25">Continue Payement</button>
                     </div>
